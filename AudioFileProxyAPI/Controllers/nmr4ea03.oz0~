@@ -45,109 +45,100 @@ public class GeniusProxyController : ControllerBase
     [HttpGet("search_missing")]
     public async Task<IActionResult> SearchUntaggedSong([FromQuery] string fileName)
     {
+        int fallbackAlbumNumber = 0;
+
+        if (string.IsNullOrEmpty(fileName))
+            return BadRequest("File name is required.");
+
+        var tokens = TokenizeFileName(fileName);
+
+        if (tokens.Count < 2)
+            return BadRequest("Invalid file name format.");
+
+        if (tokens.Count > 3)
+        {
+            tokens = tokens.Take(3).ToList();
+
+            // Check if any token can be converted to a numeric type  
+            bool hasNumericToken = tokens.Any(token => int.TryParse(token, out _));
+
+            if (hasNumericToken)
+            {
+                //Sets the first convertible to a numeric type token to be the fallbackAlbumNumber in case genius API can't determine the album number from the artist and track name
+                fallbackAlbumNumber = tokens.Select(token =>
+                {
+                    int.TryParse(token, out int number);
+                    return number; //Only returns out of the lambda expression
+                }).First(number => number != 0);
+
+                //We want fallbackAlbumNumber converted back to string here. New track object creation will handle converting it to int
+                tokens.Remove(fallbackAlbumNumber.ToString());
+            }
+        }
+
+        string firstToken = tokens[0];
+        string secondToken = tokens[1];
+
+        int firstTrialHitCount = await CheckForHitsWithTokens(firstToken, secondToken);
+        int secondTrialHitCount = await CheckForHitsWithTokens(secondToken, firstToken);
+
         string artist = string.Empty;
         string trackName = string.Empty;
         string songUrl = string.Empty;
         string geniusSongId = string.Empty;
-        string album = string.Empty;
-        string albumTrackNumber = string.Empty;
 
-        int fallbackAlbumNumber = 0;
-
-        try
+        if (firstTrialHitCount == 0 && secondTrialHitCount == 0)
         {
-            if (string.IsNullOrEmpty(fileName))
-                return BadRequest("File name is required.");
+            return NotFound("Song not found.");
+        }
+        else if (firstTrialHitCount > secondTrialHitCount)
+        {
+            artist = firstToken;
+            trackName = secondToken;
 
-            var tokens = TokenizeFileName(fileName);
-
-            if (tokens.Count < 2)
-                return BadRequest("Invalid file name format.");
-
-            if (tokens.Count > 3)
+            var songUrlResult = await HandleGeniusUrlSearch(artist, trackName);
+            if (songUrlResult is OkObjectResult okResult && okResult.Value is JObject resultJson)
             {
-                CheckForAlbumTrackNumberInTokens(ref fallbackAlbumNumber, ref tokens);
+                songUrl = resultJson["songUrl"]?.ToString();
+                geniusSongId = resultJson["geniusSongId"]?.ToString();
             }
+        }
+        else if (secondTrialHitCount > firstTrialHitCount)
+        {
+            artist = secondToken;
+            trackName = firstToken;
 
-            string firstToken = tokens[0];
-            string secondToken = tokens[1];
+            await HandleGeniusUrlAndSongID(artist, trackName, ref songUrl, ref geniusSongId);
+        }
+        else if (firstTrialHitCount == secondTrialHitCount) //This is an edge-case
+        {
+            var results = await HandleEqualHitsForTokenCombinations(firstToken, secondToken);
 
-            int firstTrialHitCount = await CheckForHitsWithTokens(firstToken, secondToken);
-            int secondTrialHitCount = await CheckForHitsWithTokens(secondToken, firstToken);
-
-            if (firstTrialHitCount == 0 && secondTrialHitCount == 0)
+            if (!results.Any())
             {
                 return NotFound("Song not found.");
             }
-
-            else if (firstTrialHitCount > secondTrialHitCount)
+            else
             {
-                artist = firstToken;
-                trackName = secondToken;
-
-                var results = await HandleGeniusUrlAndSongID(artist, trackName);
-
-                if (!results.Any())
-                {
-                    return NotFound("Song not found.");
-                }
-                else
-                {
-                    songUrl = results[0].ToString();
-                    geniusSongId = results[1].ToString();
-                }
-            }
-
-            else if (secondTrialHitCount > firstTrialHitCount)
-            {
-                artist = secondToken;
-                trackName = firstToken;
-
-                var results = await HandleGeniusUrlAndSongID(artist, trackName);
-
-                if (!results.Any())
-                {
-                    return NotFound("Song not found.");
-                }
-                else
-                {
-                    songUrl = results[0].ToString();
-                    geniusSongId = results[1].ToString();
-                }
-            }
-
-            else if (firstTrialHitCount == secondTrialHitCount) //This is an edge-case
-            {
-                var results = await HandleEqualHitsForTokenCombinations(firstToken, secondToken);
-
-                if (!results.Any())
-                {
-                    return NotFound("Song not found.");
-                }
-                else
-                {
-                    songUrl = results[0].ToString();
-                    geniusSongId = results[1].ToString();
-                    artist = results[2].ToString();
-                    trackName = results[3].ToString();
-                }
-            }
-
-            if (string.IsNullOrEmpty(geniusSongId) == false)
-            {
-                string? albumId = await HandleGeniusSearchForAlbum(geniusSongId);
-
-                if (string.IsNullOrEmpty(albumId) == false)
-                {
-                    albumTrackNumber = await HandleGeniusSearchForAlbumTrackNumber(geniusSongId, albumTrackNumber, albumId);
-                }
+                songUrl = results[0].ToString();
+                geniusSongId = results[1].ToString();
+                artist = results[2].ToString();
+                trackName = results[3].ToString();
             }
 
         }
 
-        catch (Exception ex)
+        string album = string.Empty;
+        string albumNumber = string.Empty;
+
+        if (string.IsNullOrEmpty(geniusSongId) == false)
         {
-            return StatusCode(500, $"Server error: {ex.Message}");
+            string? albumId = await HandleGeniusSearchForAlbum(geniusSongId);
+
+            if (string.IsNullOrEmpty(albumId) == false)
+            {
+                albumNumber = await HandleGeniusSearchForAlbumTrackNumber(geniusSongId, albumNumber, albumId);
+            }
         }
 
         return Ok(new
@@ -155,68 +146,30 @@ public class GeniusProxyController : ControllerBase
                 trackName = trackName,
                 artist = artist,
                 album = album,
-                albumTrackNumber = string.IsNullOrEmpty(albumTrackNumber) ? fallbackAlbumNumber.ToString() : albumTrackNumber,
+                albumNumber = string.IsNullOrEmpty(albumNumber) ? fallbackAlbumNumber.ToString() : albumNumber,
                 songUrl = songUrl,
                 apiSource = "Genius"
             });
-    }
 
-    private async Task<IActionResult> HandleGeniusUrlSearch(string artist, string trackName)
-    {
-        //Step 0: Check for ? by MFDOOM
-        trackName = CheckForQuestionMarkByMFDOOM(trackName);
 
-        // Step 1: Search for the song
-        string searchUrl = $"https://api.genius.com/search?q={Uri.EscapeDataString(artist + " " + trackName)}";
-        var response = await _httpClient.GetStringAsync(searchUrl);
-        JObject searchJson = JObject.Parse(response);
-
-        // Step 2: Extract song ID
-        var hits = searchJson["response"]?["hits"];
-        if (hits == null || !hits.HasValues)
-            return NotFound("Song not found.");
-
-        // Step 3: Preprocess artist and track name for comparison
-        string trackLower = NormalizeForUrlComparison(trackName);
-        string artistLower = NormalizeForUrlComparison(artist);
-        string fallbackUrl = null;
-        string geniusSongId = null;
-
-        // Step 4: Iterate over hits to find the best match
-        foreach (var hit in hits)
+        try
         {
-            string url = hit["result"]?["url"]?.ToString();
-            geniusSongId = hit["result"]?["id"]?.ToString();
-
-            if (string.IsNullOrEmpty(url))
-                continue;
-
-            string urlLower = url.ToLower();
-
-            // Check if URL contains both artist and track name
-            if (urlLower.Contains(artistLower) && urlLower.Contains(trackLower))
-                return Ok(new { songUrl = url, geniusSongId = geniusSongId });
-
-            // Store the first match that contains only the track name as fallback
-            if (fallbackUrl == null && urlLower.Contains(trackLower))
-                fallbackUrl = url;
+            // Your existing logic here  
         }
-
-        return Ok(new { songUrl = fallbackUrl ?? "Not found", geniusSongId = geniusSongId ?? "Not found" });
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Server error: {ex.Message}");
+        }
     }
 
-    private async Task<List<string>> HandleGeniusUrlAndSongID(string artist, string trackName)
+    private async Task HandleGeniusUrlAndSongID(string artist, string trackName, ref string songUrl, ref string geniusSongId)
     {
         var songUrlResult = await HandleGeniusUrlSearch(artist, trackName);
-
         if (songUrlResult is OkObjectResult okResult && okResult.Value is JObject resultJson)
         {
-            string songUrl = resultJson["songUrl"]?.ToString();
-            string geniusSongId = resultJson["geniusSongId"]?.ToString();
-            return new List<string> { songUrl, geniusSongId };
+            songUrl = resultJson["songUrl"]?.ToString();
+            geniusSongId = resultJson["geniusSongId"]?.ToString();
         }
-
-        return new List<string>();
     }
 
     private async Task<List<string>> HandleEqualHitsForTokenCombinations(string firstToken, string secondToken)
@@ -295,6 +248,50 @@ public class GeniusProxyController : ControllerBase
         return albumNumber;
     }
 
+    private async Task<IActionResult> HandleGeniusUrlSearch(string artist, string trackName)
+    {
+        //Step 0: Check for ? by MFDOOM
+        trackName = CheckForQuestionMarkByMFDOOM(trackName);
+
+        // Step 1: Search for the song
+        string searchUrl = $"https://api.genius.com/search?q={Uri.EscapeDataString(artist + " " + trackName)}";
+        var response = await _httpClient.GetStringAsync(searchUrl);
+        JObject searchJson = JObject.Parse(response);
+
+        // Step 2: Extract song ID
+        var hits = searchJson["response"]?["hits"];
+        if (hits == null || !hits.HasValues)
+            return NotFound("Song not found.");
+
+        // Step 3: Preprocess artist and track name for comparison
+        string trackLower = NormalizeForUrlComparison(trackName);
+        string artistLower = NormalizeForUrlComparison(artist);
+        string fallbackUrl = null;
+        string geniusSongId = null;
+
+        // Step 4: Iterate over hits to find the best match
+        foreach (var hit in hits)
+        {
+            string url = hit["result"]?["url"]?.ToString();
+            geniusSongId = hit["result"]?["id"]?.ToString();
+
+            if (string.IsNullOrEmpty(url))
+                continue;
+
+            string urlLower = url.ToLower();
+
+            // Check if URL contains both artist and track name
+            if (urlLower.Contains(artistLower) && urlLower.Contains(trackLower))
+                return Ok(new { songUrl = url, geniusSongId = geniusSongId });
+
+            // Store the first match that contains only the track name as fallback
+            if (fallbackUrl == null && urlLower.Contains(trackLower))
+                fallbackUrl = url;
+        }
+
+        return Ok(new { songUrl = fallbackUrl ?? "Not found", geniusSongId = geniusSongId ?? "Not found" });
+    }
+
     private async Task<int> CheckForHitsWithTokens(string aToken, string anotherToken)
     {
         //Arbitrarily sets tokens passed in to artist and trackName
@@ -326,27 +323,6 @@ public class GeniusProxyController : ControllerBase
         }
     }
 
-    private static void CheckForAlbumTrackNumberInTokens(ref int fallbackAlbumNumber, ref List<string> tokens)
-    {
-        tokens = tokens.Take(3).ToList();
-
-        // Check if any token can be converted to a numeric type  
-        bool hasNumericToken = tokens.Any(token => int.TryParse(token, out _));
-
-        if (hasNumericToken)
-        {
-            //Sets the first convertible to a numeric type token to be the fallbackAlbumNumber in case genius API can't determine the album number from the artist and track name
-            fallbackAlbumNumber = tokens.Select(token =>
-            {
-                int.TryParse(token, out int number);
-                return number; //Only returns out of the lambda expression
-            }).First(number => number != 0);
-
-            //We want fallbackAlbumNumber converted back to string here. New track object creation will handle converting it to int
-            tokens.Remove(fallbackAlbumNumber.ToString());
-        }
-    }
-
     private List<string> TokenizeFileName(string fileName)
     {
         var tokens = fileName.Split('-').Select(token => token.Trim()).ToList();
@@ -356,6 +332,11 @@ public class GeniusProxyController : ControllerBase
         //    Console.WriteLine(token);
         //}
         return tokens;
+    }
+
+    private static string CheckForQuestionMarkByMFDOOM(string trackName)
+    {
+        return trackName == "?" ? "question mark" : trackName;
     }
 
     private static string NormalizeForUrlComparison(string input)
@@ -406,10 +387,5 @@ public class GeniusProxyController : ControllerBase
         // Remove featured artist info (ft., feat., featuring, etc.)
         input = Regex.Replace(input, @"\b(ft\.?|feat\.?|featuring|prod\.?)\b.*", "", RegexOptions.IgnoreCase).Trim();
         return input;
-    }
-
-    private static string CheckForQuestionMarkByMFDOOM(string trackName)
-    {
-        return trackName == "?" ? "question mark" : trackName;
     }
 }

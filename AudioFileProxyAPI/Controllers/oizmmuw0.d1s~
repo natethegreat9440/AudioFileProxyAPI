@@ -155,54 +155,31 @@ public class GeniusProxyController : ControllerBase
                 trackName = trackName,
                 artist = artist,
                 album = album,
-                albumTrackNumber = string.IsNullOrEmpty(albumTrackNumber) ? fallbackAlbumNumber.ToString() : albumTrackNumber,
+                albumNumber = string.IsNullOrEmpty(albumTrackNumber) ? fallbackAlbumNumber.ToString() : albumTrackNumber,
                 songUrl = songUrl,
                 apiSource = "Genius"
             });
     }
 
-    private async Task<IActionResult> HandleGeniusUrlSearch(string artist, string trackName)
+    private static void CheckForAlbumTrackNumberInTokens(ref int fallbackAlbumNumber, ref List<string> tokens)
     {
-        //Step 0: Check for ? by MFDOOM
-        trackName = CheckForQuestionMarkByMFDOOM(trackName);
+        tokens = tokens.Take(3).ToList();
 
-        // Step 1: Search for the song
-        string searchUrl = $"https://api.genius.com/search?q={Uri.EscapeDataString(artist + " " + trackName)}";
-        var response = await _httpClient.GetStringAsync(searchUrl);
-        JObject searchJson = JObject.Parse(response);
+        // Check if any token can be converted to a numeric type  
+        bool hasNumericToken = tokens.Any(token => int.TryParse(token, out _));
 
-        // Step 2: Extract song ID
-        var hits = searchJson["response"]?["hits"];
-        if (hits == null || !hits.HasValues)
-            return NotFound("Song not found.");
-
-        // Step 3: Preprocess artist and track name for comparison
-        string trackLower = NormalizeForUrlComparison(trackName);
-        string artistLower = NormalizeForUrlComparison(artist);
-        string fallbackUrl = null;
-        string geniusSongId = null;
-
-        // Step 4: Iterate over hits to find the best match
-        foreach (var hit in hits)
+        if (hasNumericToken)
         {
-            string url = hit["result"]?["url"]?.ToString();
-            geniusSongId = hit["result"]?["id"]?.ToString();
+            //Sets the first convertible to a numeric type token to be the fallbackAlbumNumber in case genius API can't determine the album number from the artist and track name
+            fallbackAlbumNumber = tokens.Select(token =>
+            {
+                int.TryParse(token, out int number);
+                return number; //Only returns out of the lambda expression
+            }).First(number => number != 0);
 
-            if (string.IsNullOrEmpty(url))
-                continue;
-
-            string urlLower = url.ToLower();
-
-            // Check if URL contains both artist and track name
-            if (urlLower.Contains(artistLower) && urlLower.Contains(trackLower))
-                return Ok(new { songUrl = url, geniusSongId = geniusSongId });
-
-            // Store the first match that contains only the track name as fallback
-            if (fallbackUrl == null && urlLower.Contains(trackLower))
-                fallbackUrl = url;
+            //We want fallbackAlbumNumber converted back to string here. New track object creation will handle converting it to int
+            tokens.Remove(fallbackAlbumNumber.ToString());
         }
-
-        return Ok(new { songUrl = fallbackUrl ?? "Not found", geniusSongId = geniusSongId ?? "Not found" });
     }
 
     private async Task<List<string>> HandleGeniusUrlAndSongID(string artist, string trackName)
@@ -295,6 +272,50 @@ public class GeniusProxyController : ControllerBase
         return albumNumber;
     }
 
+    private async Task<IActionResult> HandleGeniusUrlSearch(string artist, string trackName)
+    {
+        //Step 0: Check for ? by MFDOOM
+        trackName = CheckForQuestionMarkByMFDOOM(trackName);
+
+        // Step 1: Search for the song
+        string searchUrl = $"https://api.genius.com/search?q={Uri.EscapeDataString(artist + " " + trackName)}";
+        var response = await _httpClient.GetStringAsync(searchUrl);
+        JObject searchJson = JObject.Parse(response);
+
+        // Step 2: Extract song ID
+        var hits = searchJson["response"]?["hits"];
+        if (hits == null || !hits.HasValues)
+            return NotFound("Song not found.");
+
+        // Step 3: Preprocess artist and track name for comparison
+        string trackLower = NormalizeForUrlComparison(trackName);
+        string artistLower = NormalizeForUrlComparison(artist);
+        string fallbackUrl = null;
+        string geniusSongId = null;
+
+        // Step 4: Iterate over hits to find the best match
+        foreach (var hit in hits)
+        {
+            string url = hit["result"]?["url"]?.ToString();
+            geniusSongId = hit["result"]?["id"]?.ToString();
+
+            if (string.IsNullOrEmpty(url))
+                continue;
+
+            string urlLower = url.ToLower();
+
+            // Check if URL contains both artist and track name
+            if (urlLower.Contains(artistLower) && urlLower.Contains(trackLower))
+                return Ok(new { songUrl = url, geniusSongId = geniusSongId });
+
+            // Store the first match that contains only the track name as fallback
+            if (fallbackUrl == null && urlLower.Contains(trackLower))
+                fallbackUrl = url;
+        }
+
+        return Ok(new { songUrl = fallbackUrl ?? "Not found", geniusSongId = geniusSongId ?? "Not found" });
+    }
+
     private async Task<int> CheckForHitsWithTokens(string aToken, string anotherToken)
     {
         //Arbitrarily sets tokens passed in to artist and trackName
@@ -326,27 +347,6 @@ public class GeniusProxyController : ControllerBase
         }
     }
 
-    private static void CheckForAlbumTrackNumberInTokens(ref int fallbackAlbumNumber, ref List<string> tokens)
-    {
-        tokens = tokens.Take(3).ToList();
-
-        // Check if any token can be converted to a numeric type  
-        bool hasNumericToken = tokens.Any(token => int.TryParse(token, out _));
-
-        if (hasNumericToken)
-        {
-            //Sets the first convertible to a numeric type token to be the fallbackAlbumNumber in case genius API can't determine the album number from the artist and track name
-            fallbackAlbumNumber = tokens.Select(token =>
-            {
-                int.TryParse(token, out int number);
-                return number; //Only returns out of the lambda expression
-            }).First(number => number != 0);
-
-            //We want fallbackAlbumNumber converted back to string here. New track object creation will handle converting it to int
-            tokens.Remove(fallbackAlbumNumber.ToString());
-        }
-    }
-
     private List<string> TokenizeFileName(string fileName)
     {
         var tokens = fileName.Split('-').Select(token => token.Trim()).ToList();
@@ -356,6 +356,11 @@ public class GeniusProxyController : ControllerBase
         //    Console.WriteLine(token);
         //}
         return tokens;
+    }
+
+    private static string CheckForQuestionMarkByMFDOOM(string trackName)
+    {
+        return trackName == "?" ? "question mark" : trackName;
     }
 
     private static string NormalizeForUrlComparison(string input)
@@ -406,10 +411,5 @@ public class GeniusProxyController : ControllerBase
         // Remove featured artist info (ft., feat., featuring, etc.)
         input = Regex.Replace(input, @"\b(ft\.?|feat\.?|featuring|prod\.?)\b.*", "", RegexOptions.IgnoreCase).Trim();
         return input;
-    }
-
-    private static string CheckForQuestionMarkByMFDOOM(string trackName)
-    {
-        return trackName == "?" ? "question mark" : trackName;
     }
 }

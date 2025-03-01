@@ -21,19 +21,6 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T00:57:28.503Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
@@ -43,13 +30,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:57:28.503Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GeniusProxyController.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Controllers\\GeniusProxyController.cs",
               "RelativeDocumentMoniker": "Controllers\\GeniusProxyController.cs",
               "ToolTip": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Controllers\\GeniusProxyController.cs",
               "RelativeToolTip": "Controllers\\GeniusProxyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACkBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T00:40:52.097Z",
               "EditorCaption": ""
