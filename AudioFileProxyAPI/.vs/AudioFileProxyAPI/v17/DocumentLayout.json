@@ -36,9 +36,10 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwCYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T00:57:28.503Z"
+              "WhenOpened": "2025-02-21T00:57:28.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,7 +49,7 @@
               "RelativeDocumentMoniker": "Controllers\\GeniusProxyController.cs",
               "ToolTip": "C:\\Users\\natha\\Documents\\AudioFileProxyAPI\\AudioFileProxyAPI\\Controllers\\GeniusProxyController.cs",
               "RelativeToolTip": "Controllers\\GeniusProxyController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACkBAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAUwHwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T00:40:52.097Z",
               "EditorCaption": ""

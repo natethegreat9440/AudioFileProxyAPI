@@ -77,7 +77,7 @@ public class GeniusProxyController : ControllerBase
 
             if (firstTrialHitCount == 0 && secondTrialHitCount == 0)
             {
-                return NotFound("Song not found.");
+                return NotFound("Song not found. No hits found for any token combination.");
             }
 
             else if (firstTrialHitCount > secondTrialHitCount)
@@ -89,7 +89,7 @@ public class GeniusProxyController : ControllerBase
 
                 if (!results.Any())
                 {
-                    return NotFound("Song not found.");
+                    return NotFound("Song not found where firstTrialHitCount > secondTrialHitCount");
                 }
                 else
                 {
@@ -107,7 +107,7 @@ public class GeniusProxyController : ControllerBase
 
                 if (!results.Any())
                 {
-                    return NotFound("Song not found.");
+                    return NotFound("Song not found secondTrialHitCount > firstTrialHitCount");
                 }
                 else
                 {
@@ -122,7 +122,7 @@ public class GeniusProxyController : ControllerBase
 
                 if (!results.Any())
                 {
-                    return NotFound("Song not found.");
+                    return NotFound("Song not found where hits are equal and non-zero");
                 }
                 else
                 {
@@ -174,7 +174,7 @@ public class GeniusProxyController : ControllerBase
         // Step 2: Extract song ID
         var hits = searchJson["response"]?["hits"];
         if (hits == null || !hits.HasValues)
-            return NotFound("Song not found.");
+            return NotFound("Song not found. Failed in HandleGeniusUrlSearch.");
 
         // Step 3: Preprocess artist and track name for comparison
         string trackLower = NormalizeForUrlComparison(trackName);
