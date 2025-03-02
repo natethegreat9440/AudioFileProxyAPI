@@ -73,8 +73,8 @@ public class GeniusProxyController : ControllerBase
                 CheckForAlbumTrackNumberInTokens(ref fallbackAlbumNumber, ref tokens);
             }
 
-            string firstToken = tokens[0];
-            string secondToken = tokens[1];
+            string firstToken = NormalizeForUrlComparison(tokens[0]);
+            string secondToken = NormalizeForUrlComparison(tokens[1]);
 
             int firstTrialHitCount = await CheckForHitsWithTokens(firstToken, secondToken);
             int secondTrialHitCount = await CheckForHitsWithTokens(secondToken, firstToken);
