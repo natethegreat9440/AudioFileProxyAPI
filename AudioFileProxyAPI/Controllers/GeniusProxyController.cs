@@ -139,7 +139,10 @@ public class GeniusProxyController : ControllerBase
 
             if (string.IsNullOrEmpty(geniusSongId) == false)
             {
-                string? albumId = await HandleGeniusSearchForAlbum(geniusSongId);
+                var results = await HandleGeniusSearchForAlbumAndAlbumId(geniusSongId);
+
+                album = results[0].ToString();
+                string albumId = results[1].ToString();
 
                 if (string.IsNullOrEmpty(albumId) == false)
                 {
@@ -270,7 +273,7 @@ public class GeniusProxyController : ControllerBase
 
     }
 
-    private async Task<string?> HandleGeniusSearchForAlbum(string geniusSongId)
+    private async Task<List<string?>> HandleGeniusSearchForAlbumAndAlbumId(string geniusSongId)
     {
         string songDetailsUrl = $"https://api.genius.com/songs/{geniusSongId}";
         var songResponse = await _httpClient.GetStringAsync(songDetailsUrl);
@@ -278,7 +281,8 @@ public class GeniusProxyController : ControllerBase
 
         string albumName = songJson["response"]?["song"]?["album"]?["name"]?.ToString() ?? "Unknown Album";
         var albumId = songJson["response"]?["song"]?["album"]?["id"]?.ToString();
-        return albumId;
+
+        return new List<string?> { albumName, albumId };
     }
 
     private async Task<string> HandleGeniusSearchForAlbumTrackNumber(string geniusSongId, string albumNumber, string? albumId)
