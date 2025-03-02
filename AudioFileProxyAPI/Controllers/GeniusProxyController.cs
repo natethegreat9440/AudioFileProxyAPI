@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Runtime.ExceptionServices;
 using System.Net.Http.Json;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 [Route("api/genius")]
 [ApiController]
@@ -21,8 +22,9 @@ public class GeniusProxyController : ControllerBase
         _httpClient = new HttpClient();
         _apiKey = Environment.GetEnvironmentVariable("GENIUS_API_KEY");
 
-        //TODO: Delete the hard coded API key before committing!!!
-        //_apiKey = "copy and paste API key here for pre-deployment on Render testing";
+        //TODO: Delete the hard coded API key before committing and uncomment the line above!!!
+        //Copy and paste API key below for pre-deployment on Render testing;
+        //_apiKey = "";
 
         if (string.IsNullOrEmpty(_apiKey))
             throw new Exception("Genius API key is missing. Set it in appsettings.json.");
@@ -73,8 +75,8 @@ public class GeniusProxyController : ControllerBase
                 CheckForAlbumTrackNumberInTokens(ref fallbackAlbumNumber, ref tokens);
             }
 
-            string firstToken = NormalizeForUrlComparison(tokens[0]);
-            string secondToken = NormalizeForUrlComparison(tokens[1]);
+            string firstToken = CleanToken(tokens[0]);
+            string secondToken = CleanToken(tokens[1]);
 
             int firstTrialHitCount = await CheckForHitsWithTokens(firstToken, secondToken);
             int secondTrialHitCount = await CheckForHitsWithTokens(secondToken, firstToken);
@@ -243,8 +245,14 @@ public class GeniusProxyController : ControllerBase
         string songUrl = string.Empty;
         string geniusSongId = string.Empty;
 
-        if (songUrlFirstResult is OkObjectResult okFirstResult && okFirstResult.Value is JObject resultFirstJson)
+        if (songUrlFirstResult is OkObjectResult okFirstResult)
         {
+            // Convert the anonymous object into a JSON string
+            var jsonString = JsonConvert.SerializeObject(okFirstResult.Value);
+
+            // Parse the string into a JObject
+            JObject resultFirstJson = JObject.Parse(jsonString);
+
             songUrl = resultFirstJson["songUrl"]?.ToString();
             geniusSongId = resultFirstJson["geniusSongId"]?.ToString();
 
@@ -253,8 +261,14 @@ public class GeniusProxyController : ControllerBase
 
             //If the first result returns a matching songUrl, use that songUrl and ignore the second result
         }
-        else if (songUrlSecondResult is OkObjectResult okSecondResult && okSecondResult.Value is JObject resultSecondJson)
+        else if (songUrlSecondResult is OkObjectResult okSecondResult)
         {
+            // Convert the anonymous object into a JSON string
+            var jsonString = JsonConvert.SerializeObject(okSecondResult.Value);
+
+            // Parse the string into a JObject
+            JObject resultSecondJson = JObject.Parse(jsonString);
+
             songUrl = resultSecondJson["songUrl"]?.ToString();
             geniusSongId = resultSecondJson["geniusSongId"]?.ToString();
 
@@ -387,13 +401,31 @@ public class GeniusProxyController : ControllerBase
 
         input = CleanFeaturedArtist(input);
 
-        input = CleanSpecialCharacters(input);
+        input = CleanSpecialCharactersAndLower(input);
 
         input = CleanExtraSpaces(input);
 
         input = ReplaceSpacesWithHyphens(input);
 
         return RemoveConsecutiveHyphens(input);
+    }
+
+    private static string CleanToken(string input)
+    {
+        if (string.IsNullOrEmpty(input))
+            return string.Empty;
+
+        input = CleanFeaturedArtist(input);
+
+        input = CleanTheWordLyric(input);
+
+        input = CleanTheWordExplicit(input);
+
+        input = CleanTheWordAudio(input);
+
+        input = CleanSpecialCharacters(input);
+
+        return CleanExtraSpaces(input);
     }
 
     private static string RemoveConsecutiveHyphens(string input)
@@ -416,10 +448,35 @@ public class GeniusProxyController : ControllerBase
         return input;
     }
 
+    private static string CleanSpecialCharactersAndLower(string input)
+    {
+        // Remove all special characters except letters, numbers, and spaces and lowercase remaining characters
+        input = Regex.Replace(input.ToLower(), @"[^a-z0-9 ]", "");
+        return input;
+    }
+
     private static string CleanSpecialCharacters(string input)
     {
         // Remove all special characters except letters, numbers, and spaces
-        input = Regex.Replace(input.ToLower(), @"[^a-z0-9 ]", "");
+        input = Regex.Replace(input, @"[^a-zA-Z0-9 ]", "");
+        return input.Trim();
+    }
+
+    private static string CleanTheWordLyric(string input)
+    {
+        input = Regex.Replace(input, @"\b(lyric|lyrics)\b.*", "", RegexOptions.IgnoreCase).Trim();
+        return input;
+    }
+
+    private static string CleanTheWordExplicit(string input)
+    {
+        input = Regex.Replace(input, @"\b(explicit)\b.*", "", RegexOptions.IgnoreCase).Trim();
+        return input;
+    }
+
+    private static string CleanTheWordAudio(string input)
+    {
+        input = Regex.Replace(input, @"\b(audio)\b.*", "", RegexOptions.IgnoreCase).Trim();
         return input;
     }
 
