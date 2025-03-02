@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "dTgIH3WhdZsZVCcfxSvKba676dKyouvDOxKIWl4rdQo=",
+  "Source": "AudioFileProxyAPI",
+  "BasePath": "_content/AudioFileProxyAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "ContainingType": "GeniusProxyController",
+    "Method": "SearchSong",
+    "RelativePath": "api/genius/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artist",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "trackName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GeniusProxyController",
+    "Method": "SearchUntaggedSong",
+    "RelativePath": "api/genius/search_missing",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
