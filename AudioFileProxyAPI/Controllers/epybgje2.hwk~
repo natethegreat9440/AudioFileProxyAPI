@@ -24,6 +24,7 @@ public class GeniusProxyController : ControllerBase
 
         //TODO: Delete the hard coded API key before committing and uncomment the line above!!!
         //Copy and paste API key below for pre-deployment on Render testing;
+        //_apiKey = "";
 
         if (string.IsNullOrEmpty(_apiKey))
             throw new Exception("Genius API key is missing. Set it in appsettings.json.");
@@ -146,9 +147,6 @@ public class GeniusProxyController : ControllerBase
 
                 var albumResults = await HandleGeniusSearchForAlbumAndAlbumId(geniusSongId);
 
-                trackName = trackResults[0].ToString();
-                artist = trackResults[1].ToString();
-
                 album = albumResults[0].ToString();
                 string albumId = albumResults[1].ToString();
 
@@ -167,8 +165,8 @@ public class GeniusProxyController : ControllerBase
 
         return Ok(new
             {
-                trackName = string.IsNullOrEmpty(trackName) ? trackNameFallback.ToString() : trackName,
-                artist = string.IsNullOrEmpty(artist) ? artist.ToString() : artist,
+                trackName = trackName,
+                artist = artist,
                 album = album,
                 albumTrackNumber = string.IsNullOrEmpty(albumTrackNumber) ? fallbackAlbumNumber.ToString() : albumTrackNumber,
                 songUrl = songUrl,
@@ -311,8 +309,8 @@ public class GeniusProxyController : ControllerBase
         var songResponse = await _httpClient.GetStringAsync(songDetailsUrl);
         JObject songJson = JObject.Parse(songResponse);
 
-        string trackName = songJson["response"]?["song"]?["title_with_featured"]?.ToString() ?? "Unknown Track";
-        string artist = songJson["response"]?["song"]?["primary_artist_names"]?.ToString() ?? "Unknown Artist";
+        string trackName = songJson["response"]?["song"]?["album"]?["name"]?.ToString() ?? "Unknown Album";
+        string artist = songJson["response"]?["song"]?["album"]?["id"]?.ToString();
 
         return new List<string?> { trackName, artist };
     }

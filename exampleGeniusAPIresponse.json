@@ -1,0 +1,2609 @@
+{
+    "meta": {
+      "status": 200
+    },
+    "response": {
+      "song": {
+        "annotation_count": 17,
+        "api_path": "/songs/217266",
+        "apple_music_id": "705510362",
+        "apple_music_player_url": "https://genius.com/songs/217266/apple_music_player",
+        "artist_names": "Drake",
+        "description": {
+          "dom": {
+            "tag": "root",
+            "children": [
+              {
+                "tag": "p",
+                "children": [
+                  "In this track, Drake discusses the transition from a childhood without a father to the top rapper in the game."
+                ]
+              },
+              "",
+              {
+                "tag": "p",
+                "children": [
+                  "In the first verse, Drake claims “mothafuckas never loved us”, a stark contrast from later in the third verse, where he talks about his luxurious life and “tennis matches at the crib.”"
+                ]
+              },
+              "",
+              {
+                "tag": "p",
+                "children": [
+                  "This is a song for all who grew up without real love from a parent. Also for those in the margins of society who the general upper-class community never loved or funded."
+                ]
+              },
+              "",
+              {
+                "tag": "p",
+                "children": [
+                  "It’s also worth noting that Drizzy’s third verse in the song is in the same structure as Mase’s verse in “Mo Money Mo Problems”, which is an entire song dedicated to the woes of having too much money, and “suffering from success”."
+                ]
+              },
+              "",
+              {
+                "tag": "p",
+                "children": [
+                  "Like the general theme of ",
+                  {
+                    "tag": "em",
+                    "children": [
+                      "NWTS,"
+                    ]
+                  },
+                  " this song captures the transitions Drake has encountered progressing through life, while still remaining on his “worst behavior.”"
+                ]
+              },
+              "",
+              {
+                "tag": "p",
+                "children": [
+                  "Dahi clarifies that he didn’t use a sample on the record:",
+                  {
+                    "tag": "br"
+                  },
+                  "",
+                  {
+                    "tag": "a",
+                    "attributes": {
+                      "href": "https://twitter.com/DjDahi/status/379677835801018368",
+                      "rel": "noopener nofollow"
+                    },
+                    "children": [
+                      "https://twitter.com/DjDahi/status/379677835801018368"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "embed_content": "\u003Cdiv id='rg_embed_link_217266' class='rg_embed_link' data-song-id='217266'\u003ERead \u003Ca href='https://genius.com/Drake-worst-behavior-lyrics'\u003E“Worst Behavior” by Drake\u003C/a\u003E on Genius\u003C/div\u003E \u003Cscript crossorigin src='//genius.com/songs/217266/embed.js'\u003E\u003C/script\u003E",
+        "featured_video": true,
+        "full_title": "Worst Behavior by Drake",
+        "header_image_thumbnail_url": "https://images.genius.com/b55953177013ca20466401280f855a08.300x300x1.png",
+        "header_image_url": "https://images.genius.com/b55953177013ca20466401280f855a08.1000x1000x1.png",
+        "id": 217266,
+        "language": "en",
+        "lyrics_owner_id": 108199,
+        "lyrics_state": "complete",
+        "path": "/Drake-worst-behavior-lyrics",
+        "primary_artist_names": "Drake",
+        "pyongs_count": 383,
+        "recording_location": "Metalworks Studios, Mississauga, ON",
+        "relationships_index_url": "https://genius.com/Drake-worst-behavior-sample",
+        "release_date": "2013-09-24",
+        "release_date_for_display": "September 24, 2013",
+        "release_date_with_abbreviated_month_for_display": "Sep. 24, 2013",
+        "song_art_image_thumbnail_url": "https://images.genius.com/b55953177013ca20466401280f855a08.300x300x1.png",
+        "song_art_image_url": "https://images.genius.com/b55953177013ca20466401280f855a08.1000x1000x1.png",
+        "stats": {
+          "accepted_annotations": 16,
+          "contributors": 208,
+          "iq_earners": 208,
+          "transcribers": 6,
+          "unreviewed_annotations": 0,
+          "verified_annotations": 0,
+          "hot": false,
+          "pageviews": 2475571
+        },
+        "title": "Worst Behavior",
+        "title_with_featured": "Worst Behavior",
+        "url": "https://genius.com/Drake-worst-behavior-lyrics",
+        "current_user_metadata": {
+          "permissions": [
+            "see_pageviews",
+            "view_apple_music_player",
+            "view_recommendations",
+            "view_relationships_page",
+            "view_song_story_gallery"
+          ],
+          "excluded_permissions": [
+            "follow",
+            "award_transcription_iq",
+            "remove_transcription_iq",
+            "pyong",
+            "edit_lyrics",
+            "view_annotation_engagement_data",
+            "publish",
+            "unpublish",
+            "edit_spotify_details",
+            "hide",
+            "unhide",
+            "toggle_featured_video",
+            "add_pinned_annotation_to",
+            "add_community_annotation_to",
+            "destroy",
+            "mark_as_not_spam",
+            "edit_spotify_annotations_for",
+            "verify_lyrics",
+            "unverify_lyrics",
+            "edit_anything",
+            "edit_any_media",
+            "edit",
+            "rename",
+            "edit_tags",
+            "reindex",
+            "view_lyrics_synchronization",
+            "enable_media",
+            "disable_media",
+            "edit_lyrics_or_annotation_brackets",
+            "see_editorial_indicators",
+            "view_attribution_visualization",
+            "edit_annotation_brackets",
+            "preview_lyrics_for_export",
+            "hide_apple_player",
+            "unhide_apple_player",
+            "trigger_apple_match",
+            "mark_lyrics_evaluation_as_complete",
+            "mark_lyrics_evaluation_as_staff_approved",
+            "unmark_lyrics_evaluation_as_complete",
+            "mark_lyrics_evaluation_as_un_staff_approved",
+            "view_transcriber_media_player",
+            "override_apple_match",
+            "set_song_color_gradient",
+            "mark_as_hot",
+            "unmark_as_hot",
+            "view_mark_complete_explanatory_tooltip",
+            "edit_youtube_url",
+            "edit_soundcloud_url",
+            "edit_spotify_uuid",
+            "edit_vevo_url",
+            "create_comment",
+            "moderate_annotations",
+            "create_annotation",
+            "see_short_id",
+            "manage_chart_item",
+            "create_tag",
+            "propose_lyrics_edit",
+            "view_lyrics_edit_proposals_on_song",
+            "create_question",
+            "answer_question_with_source",
+            "create_additional_role",
+            "add_qa",
+            "pin_qa"
+          ],
+          "interactions": {
+            "pyong": false,
+            "following": false
+          },
+          "relationships": {
+  
+          },
+          "iq_by_action": {
+  
+          }
+        },
+        "song_art_primary_color": "#047cc3",
+        "song_art_secondary_color": "#045ca3",
+        "song_art_text_color": "#fff",
+        "album": {
+          "api_path": "/albums/40475",
+          "cover_art_url": "https://images.genius.com/b55953177013ca20466401280f855a08.1000x1000x1.png",
+          "full_title": "Nothing Was the Same by Drake",
+          "id": 40475,
+          "name": "Nothing Was the Same",
+          "primary_artist_names": "Drake",
+          "release_date_for_display": "September 24, 2013",
+          "url": "https://genius.com/albums/Drake/Nothing-was-the-same",
+          "artist": {
+            "api_path": "/artists/130",
+            "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+            "id": 130,
+            "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Drake",
+            "url": "https://genius.com/artists/Drake"
+          },
+          "primary_artists": [
+            {
+              "api_path": "/artists/130",
+              "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+              "id": 130,
+              "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Drake",
+              "url": "https://genius.com/artists/Drake"
+            }
+          ]
+        },
+        "custom_performances": [
+          {
+            "label": "Additional Vocals",
+            "artists": [
+              {
+                "api_path": "/artists/26868",
+                "header_image_url": "https://images.genius.com/f3db36a5508ed9ec0f665d5e931f4e3e.960x960x1.jpg",
+                "id": 26868,
+                "image_url": "https://images.genius.com/1c5f5bf4c1828e86a1c49d36a0ddb548.960x960x1.jpg",
+                "is_meme_verified": true,
+                "is_verified": true,
+                "name": "Sampha",
+                "url": "https://genius.com/artists/Sampha",
+                "iq": 3727
+              }
+            ]
+          },
+          {
+            "label": "Mastering Engineer",
+            "artists": [
+              {
+                "api_path": "/artists/648244",
+                "header_image_url": "https://images.genius.com/a74508bdf5e1bf26f8263837990882ec.980x320x1.jpg",
+                "id": 648244,
+                "image_url": "https://images.genius.com/12d02c504d55a59a1bdb85fcf0bcb64a.320x320x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Chris Athens",
+                "url": "https://genius.com/artists/Chris-athens"
+              }
+            ]
+          },
+          {
+            "label": "Publisher",
+            "artists": [
+              {
+                "api_path": "/artists/2001928",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2001928,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Sandra Gale",
+                "url": "https://genius.com/artists/Sandra-gale"
+              },
+              {
+                "api_path": "/artists/1009923",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 1009923,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Dahi Productions",
+                "url": "https://genius.com/artists/Dahi-productions"
+              },
+              {
+                "api_path": "/artists/1035699",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 1035699,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "B.I.G. Poppa Music",
+                "url": "https://genius.com/artists/Big-poppa-music"
+              },
+              {
+                "api_path": "/artists/648009",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 648009,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Justin Combs Music",
+                "url": "https://genius.com/artists/Justin-combs-music"
+              },
+              {
+                "api_path": "/artists/2497851",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2497851,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "M Betha Publishing",
+                "url": "https://genius.com/artists/M-betha-publishing"
+              },
+              {
+                "api_path": "/artists/2698260",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2698260,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Parma Ninja Music",
+                "url": "https://genius.com/artists/Parma-ninja-music"
+              },
+              {
+                "api_path": "/artists/2496831",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2496831,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Bernard’s Other Music",
+                "url": "https://genius.com/artists/Bernards-other-music"
+              },
+              {
+                "api_path": "/artists/1223280",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 1223280,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Steven A. Jordan Music",
+                "url": "https://genius.com/artists/Steven-a-jordan-music"
+              },
+              {
+                "api_path": "/artists/2955801",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2955801,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "LW Music",
+                "url": "https://genius.com/artists/Lw-music"
+              },
+              {
+                "api_path": "/artists/648041",
+                "header_image_url": "https://images.genius.com/e97e77720bff06844982449c559cc143.1000x1000x1.png",
+                "id": 648041,
+                "image_url": "https://images.genius.com/a7e1ee6cba00091ee294d8b66b06df3d.1000x1000x1.png",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "EMI Music Publishing",
+                "url": "https://genius.com/artists/Emi-music-publishing"
+              },
+              {
+                "api_path": "/artists/569149",
+                "header_image_url": "https://images.genius.com/3da806470ea83c61053cd914baddb9b7.300x88x1.jpg",
+                "id": 569149,
+                "image_url": "https://images.genius.com/3da806470ea83c61053cd914baddb9b7.300x88x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "EMI Blackwood Music",
+                "url": "https://genius.com/artists/Emi-blackwood-music"
+              },
+              {
+                "api_path": "/artists/2241576",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2241576,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "If You Need Me Don’t Leave Me",
+                "url": "https://genius.com/artists/If-you-need-me-dont-leave-me"
+              },
+              {
+                "api_path": "/artists/88331",
+                "header_image_url": "https://images.genius.com/fa5ad64edbc5e55390de43364de7c739.1000x333x1.webp",
+                "id": 88331,
+                "image_url": "https://images.genius.com/8ccecdf61439d2f6236c3e88a8a8e2cc.1000x1000x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Sony Music Entertainment",
+                "url": "https://genius.com/artists/Sony-music-entertainment"
+              },
+              {
+                "api_path": "/artists/2253222",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 2253222,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Sony/ATV Sonata",
+                "url": "https://genius.com/artists/Sony-atv-sonata"
+              },
+              {
+                "api_path": "/artists/1152704",
+                "header_image_url": "https://images.genius.com/1bb62d274025c1b8d95153f8fd206473.1000x1000x1.jpg",
+                "id": 1152704,
+                "image_url": "https://images.genius.com/1bb62d274025c1b8d95153f8fd206473.1000x1000x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Warner/Chappell",
+                "url": "https://genius.com/artists/Warner-chappell"
+              }
+            ]
+          },
+          {
+            "label": "Distributor",
+            "artists": [
+              {
+                "api_path": "/artists/1104563",
+                "header_image_url": "https://images.genius.com/4ce4725392359315144f1e941b16908a.600x200x1.jpg",
+                "id": 1104563,
+                "image_url": "https://images.genius.com/f2a8361a2e0b9c73b2fc96f42a4e688a.1000x1000x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Universal Music Group",
+                "url": "https://genius.com/artists/Universal-music-group"
+              }
+            ]
+          },
+          {
+            "label": "Copyright ©",
+            "artists": [
+              {
+                "api_path": "/artists/31842",
+                "header_image_url": "https://images.genius.com/668127843432d16b26d7a7815fceab84.1000x1000x1.png",
+                "id": 31842,
+                "image_url": "https://images.genius.com/668127843432d16b26d7a7815fceab84.1000x1000x1.png",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Cash Money Records",
+                "url": "https://genius.com/artists/Cash-money-records"
+              }
+            ]
+          },
+          {
+            "label": "Phonographic Copyright ℗",
+            "artists": [
+              {
+                "api_path": "/artists/31842",
+                "header_image_url": "https://images.genius.com/668127843432d16b26d7a7815fceab84.1000x1000x1.png",
+                "id": 31842,
+                "image_url": "https://images.genius.com/668127843432d16b26d7a7815fceab84.1000x1000x1.png",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Cash Money Records",
+                "url": "https://genius.com/artists/Cash-money-records"
+              }
+            ]
+          },
+          {
+            "label": "Recording Engineer",
+            "artists": [
+              {
+                "api_path": "/artists/225710",
+                "header_image_url": "https://images.genius.com/bae90e95e49713fa9bb85b41e9d5cc7c.848x473x1.png",
+                "id": 225710,
+                "image_url": "https://images.genius.com/3dbb46fabdc806ee5ffe65a8456bb8a6.720x720x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Noel Cadastre",
+                "url": "https://genius.com/artists/Noel-cadastre"
+              }
+            ]
+          },
+          {
+            "label": "Assistant Recording Engineer",
+            "artists": [
+              {
+                "api_path": "/artists/645635",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "id": 645635,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Travis Sewchan",
+                "url": "https://genius.com/artists/Travis-sewchan"
+              },
+              {
+                "api_path": "/artists/646150",
+                "header_image_url": "https://images.genius.com/d98a4fe7c0345c5daa044345f217b581.360x360x1.jpg",
+                "id": 646150,
+                "image_url": "https://images.genius.com/d98a4fe7c0345c5daa044345f217b581.360x360x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Gregg Moffett",
+                "url": "https://genius.com/artists/Gregg-moffett"
+              }
+            ]
+          },
+          {
+            "label": "Mixing Engineer",
+            "artists": [
+              {
+                "api_path": "/artists/641963",
+                "header_image_url": "https://images.genius.com/d26d98e8ebd26493dcf54dacc30304d3.800x1000x1.jpg",
+                "id": 641963,
+                "image_url": "https://images.genius.com/d4c44f5676aaa2bf6fcb8ba645cdb2fc.1000x1000x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Noel “Gadget” Campbell",
+                "url": "https://genius.com/artists/Noel-gadget-campbell"
+              }
+            ]
+          },
+          {
+            "label": "Video Director",
+            "artists": [
+              {
+                "api_path": "/artists/117635",
+                "header_image_url": "https://images.genius.com/cd83a97bfc9d194bc5c23223367f3a46.800x800x1.jpg",
+                "id": 117635,
+                "image_url": "https://images.genius.com/cd83a97bfc9d194bc5c23223367f3a46.800x800x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Director X",
+                "url": "https://genius.com/artists/Director-x"
+              },
+              {
+                "api_path": "/artists/130",
+                "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+                "id": 130,
+                "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Drake",
+                "url": "https://genius.com/artists/Drake"
+              }
+            ]
+          },
+          {
+            "label": "Label",
+            "artists": [
+              {
+                "api_path": "/artists/1011844",
+                "header_image_url": "https://images.genius.com/400a971fbe8786b2e5d5031a34a59d6a.1000x313x1.jpg",
+                "id": 1011844,
+                "image_url": "https://images.genius.com/d8ea37a285aa8bdcb0eaebb31f116529.1000x1000x1.jpg",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Republic Records",
+                "url": "https://genius.com/artists/Republic-records"
+              },
+              {
+                "api_path": "/artists/197",
+                "header_image_url": "https://images.genius.com/87d1f55850ff46ff273909cb33bd6021.980x1000x1.jpg",
+                "id": 197,
+                "image_url": "https://images.genius.com/9c52b213769ed70faebac3d920911292.591x591x1.png",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Young Money",
+                "url": "https://genius.com/artists/Young-money"
+              },
+              {
+                "api_path": "/artists/31842",
+                "header_image_url": "https://images.genius.com/668127843432d16b26d7a7815fceab84.1000x1000x1.png",
+                "id": 31842,
+                "image_url": "https://images.genius.com/668127843432d16b26d7a7815fceab84.1000x1000x1.png",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Cash Money Records",
+                "url": "https://genius.com/artists/Cash-money-records"
+              }
+            ]
+          }
+        ],
+        "description_annotation": {
+          "_type": "referent",
+          "annotator_id": 162531,
+          "annotator_login": "mdettelson",
+          "api_path": "/referents/3844412",
+          "classification": "accepted",
+          "fragment": "Worst Behavior",
+          "id": 3844412,
+          "is_description": true,
+          "path": "/3844412/Drake-worst-behavior/Worst-behavior",
+          "range": {
+            "content": "Worst Behavior"
+          },
+          "song_id": 217266,
+          "url": "https://genius.com/3844412/Drake-worst-behavior/Worst-behavior",
+          "verified_annotator_ids": [],
+          "annotatable": {
+            "api_path": "/songs/217266",
+            "client_timestamps": {
+              "updated_by_human_at": 1739401400,
+              "lyrics_updated_at": 1739401400
+            },
+            "context": "Drake",
+            "id": 217266,
+            "image_url": "https://images.genius.com/b55953177013ca20466401280f855a08.1000x1000x1.png",
+            "link_title": "Worst Behavior by Drake",
+            "title": "Worst Behavior",
+            "type": "Song",
+            "url": "https://genius.com/Drake-worst-behavior-lyrics"
+          },
+          "annotations": [
+            {
+              "api_path": "/annotations/3844412",
+              "body": {
+                "dom": {
+                  "tag": "root",
+                  "children": [
+                    {
+                      "tag": "p",
+                      "children": [
+                        "In this track, Drake discusses the transition from a childhood without a father to the top rapper in the game."
+                      ]
+                    },
+                    "",
+                    {
+                      "tag": "p",
+                      "children": [
+                        "In the first verse, Drake claims “mothafuckas never loved us”, a stark contrast from later in the third verse, where he talks about his luxurious life and “tennis matches at the crib.”"
+                      ]
+                    },
+                    "",
+                    {
+                      "tag": "p",
+                      "children": [
+                        "This is a song for all who grew up without real love from a parent. Also for those in the margins of society who the general upper-class community never loved or funded."
+                      ]
+                    },
+                    "",
+                    {
+                      "tag": "p",
+                      "children": [
+                        "It’s also worth noting that Drizzy’s third verse in the song is in the same structure as Mase’s verse in “Mo Money Mo Problems”, which is an entire song dedicated to the woes of having too much money, and “suffering from success”."
+                      ]
+                    },
+                    "",
+                    {
+                      "tag": "p",
+                      "children": [
+                        "Like the general theme of ",
+                        {
+                          "tag": "em",
+                          "children": [
+                            "NWTS,"
+                          ]
+                        },
+                        " this song captures the transitions Drake has encountered progressing through life, while still remaining on his “worst behavior.”"
+                      ]
+                    },
+                    "",
+                    {
+                      "tag": "p",
+                      "children": [
+                        "Dahi clarifies that he didn’t use a sample on the record:",
+                        {
+                          "tag": "br"
+                        },
+                        "",
+                        {
+                          "tag": "a",
+                          "attributes": {
+                            "href": "https://twitter.com/DjDahi/status/379677835801018368",
+                            "rel": "noopener nofollow"
+                          },
+                          "children": [
+                            "https://twitter.com/DjDahi/status/379677835801018368"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "comment_count": 1,
+              "community": true,
+              "custom_preview": null,
+              "has_voters": true,
+              "id": 3844412,
+              "pinned": false,
+              "share_url": "https://genius.com/3844412",
+              "source": null,
+              "state": "accepted",
+              "url": "https://genius.com/3844412/Drake-worst-behavior/Worst-behavior",
+              "verified": false,
+              "votes_total": 135,
+              "current_user_metadata": {
+                "permissions": [],
+                "excluded_permissions": [
+                  "vote",
+                  "edit",
+                  "cosign",
+                  "uncosign",
+                  "destroy",
+                  "accept",
+                  "reject",
+                  "see_unreviewed",
+                  "clear_votes",
+                  "propose_edit_to",
+                  "pin_to_profile",
+                  "unpin_from_profile",
+                  "update_source",
+                  "edit_custom_preview",
+                  "report_as_abusive",
+                  "create_comment"
+                ],
+                "interactions": {
+                  "cosign": false,
+                  "pyong": false,
+                  "vote": null
+                },
+                "iq_by_action": {
+  
+                }
+              },
+              "authors": [
+                {
+                  "attribution": 0.492146596858639,
+                  "pinned_role": null,
+                  "user": {
+                    "api_path": "/users/162531",
+                    "avatar": {
+                      "tiny": {
+                        "url": "https://images.genius.com/avatars/tiny/7b587feb603396931c27923cd13868c6",
+                        "bounding_box": {
+                          "width": 16,
+                          "height": 16
+                        }
+                      },
+                      "thumb": {
+                        "url": "https://images.genius.com/avatars/thumb/7b587feb603396931c27923cd13868c6",
+                        "bounding_box": {
+                          "width": 32,
+                          "height": 32
+                        }
+                      },
+                      "small": {
+                        "url": "https://images.genius.com/avatars/small/7b587feb603396931c27923cd13868c6",
+                        "bounding_box": {
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "medium": {
+                        "url": "https://images.genius.com/avatars/medium/7b587feb603396931c27923cd13868c6",
+                        "bounding_box": {
+                          "width": 300,
+                          "height": 400
+                        }
+                      }
+                    },
+                    "header_image_url": "https://images.genius.com/avatars/medium/7b587feb603396931c27923cd13868c6",
+                    "human_readable_role_for_display": "Contributor",
+                    "id": 162531,
+                    "iq": 505,
+                    "login": "mdettelson",
+                    "name": "mdettelson",
+                    "role_for_display": "contributor",
+                    "url": "https://genius.com/mdettelson",
+                    "current_user_metadata": {
+                      "permissions": [],
+                      "excluded_permissions": [
+                        "follow"
+                      ],
+                      "interactions": {
+                        "following": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribution": 0.329842931937173,
+                  "pinned_role": null,
+                  "user": {
+                    "api_path": "/users/1770793",
+                    "avatar": {
+                      "tiny": {
+                        "url": "https://assets.genius.com/images/default_avatar_16.png?1741036777",
+                        "bounding_box": {
+                          "width": 16,
+                          "height": 16
+                        }
+                      },
+                      "thumb": {
+                        "url": "https://assets.genius.com/images/default_avatar_32.png?1741036777",
+                        "bounding_box": {
+                          "width": 32,
+                          "height": 32
+                        }
+                      },
+                      "small": {
+                        "url": "https://assets.genius.com/images/default_avatar_100.png?1741036777",
+                        "bounding_box": {
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "medium": {
+                        "url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                        "bounding_box": {
+                          "width": 300,
+                          "height": 400
+                        }
+                      }
+                    },
+                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "human_readable_role_for_display": null,
+                    "id": 1770793,
+                    "iq": 83,
+                    "login": "knowlessreadmo",
+                    "name": "knowlessreadmo",
+                    "role_for_display": null,
+                    "url": "https://genius.com/knowlessreadmo",
+                    "current_user_metadata": {
+                      "permissions": [],
+                      "excluded_permissions": [
+                        "follow"
+                      ],
+                      "interactions": {
+                        "following": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribution": 0.157068062827225,
+                  "pinned_role": null,
+                  "user": {
+                    "api_path": "/users/314878",
+                    "avatar": {
+                      "tiny": {
+                        "url": "https://images.rapgenius.com/avatars/tiny/EEDO8f5DS6qHVYmvDgTj",
+                        "bounding_box": {
+                          "width": 16,
+                          "height": 16
+                        }
+                      },
+                      "thumb": {
+                        "url": "https://images.rapgenius.com/avatars/thumb/EEDO8f5DS6qHVYmvDgTj",
+                        "bounding_box": {
+                          "width": 32,
+                          "height": 32
+                        }
+                      },
+                      "small": {
+                        "url": "https://images.rapgenius.com/avatars/small/EEDO8f5DS6qHVYmvDgTj",
+                        "bounding_box": {
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "medium": {
+                        "url": "https://images.rapgenius.com/avatars/medium/EEDO8f5DS6qHVYmvDgTj",
+                        "bounding_box": {
+                          "width": 300,
+                          "height": 400
+                        }
+                      }
+                    },
+                    "header_image_url": "https://images.rapgenius.com/avatars/medium/EEDO8f5DS6qHVYmvDgTj",
+                    "human_readable_role_for_display": "Contributor",
+                    "id": 314878,
+                    "iq": 4038,
+                    "login": "KanyeCompanion",
+                    "name": "KanyeCompanion",
+                    "role_for_display": "contributor",
+                    "url": "https://genius.com/KanyeCompanion",
+                    "current_user_metadata": {
+                      "permissions": [],
+                      "excluded_permissions": [
+                        "follow"
+                      ],
+                      "interactions": {
+                        "following": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribution": 0.0157068062827225,
+                  "pinned_role": null,
+                  "user": {
+                    "api_path": "/users/2996174",
+                    "avatar": {
+                      "tiny": {
+                        "url": "https://images.genius.com/avatars/tiny/41e4aecf2b22be564e51d5b77e4d3b22",
+                        "bounding_box": {
+                          "width": 16,
+                          "height": 16
+                        }
+                      },
+                      "thumb": {
+                        "url": "https://images.genius.com/avatars/thumb/41e4aecf2b22be564e51d5b77e4d3b22",
+                        "bounding_box": {
+                          "width": 32,
+                          "height": 32
+                        }
+                      },
+                      "small": {
+                        "url": "https://images.genius.com/avatars/small/41e4aecf2b22be564e51d5b77e4d3b22",
+                        "bounding_box": {
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "medium": {
+                        "url": "https://images.genius.com/avatars/medium/41e4aecf2b22be564e51d5b77e4d3b22",
+                        "bounding_box": {
+                          "width": 300,
+                          "height": 400
+                        }
+                      }
+                    },
+                    "header_image_url": "https://images.genius.com/d411654e6e45d9ce1a5178548892d340.562x1000x1.png",
+                    "human_readable_role_for_display": "Editor",
+                    "id": 2996174,
+                    "iq": 47560,
+                    "login": "UnannotatedUnmastered",
+                    "name": "Corban",
+                    "role_for_display": "editor",
+                    "url": "https://genius.com/UnannotatedUnmastered",
+                    "current_user_metadata": {
+                      "permissions": [],
+                      "excluded_permissions": [
+                        "follow"
+                      ],
+                      "interactions": {
+                        "following": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribution": 0.00523560209424084,
+                  "pinned_role": null,
+                  "user": {
+                    "api_path": "/users/7461491",
+                    "avatar": {
+                      "tiny": {
+                        "url": "https://images.genius.com/avatars/tiny/5eb67997d558bba166fcf862745a36d9",
+                        "bounding_box": {
+                          "width": 16,
+                          "height": 16
+                        }
+                      },
+                      "thumb": {
+                        "url": "https://images.genius.com/avatars/thumb/5eb67997d558bba166fcf862745a36d9",
+                        "bounding_box": {
+                          "width": 32,
+                          "height": 32
+                        }
+                      },
+                      "small": {
+                        "url": "https://images.genius.com/avatars/small/5eb67997d558bba166fcf862745a36d9",
+                        "bounding_box": {
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "medium": {
+                        "url": "https://images.genius.com/avatars/medium/5eb67997d558bba166fcf862745a36d9",
+                        "bounding_box": {
+                          "width": 300,
+                          "height": 400
+                        }
+                      }
+                    },
+                    "header_image_url": "https://filepicker-images.genius.com/gzstpsiz4om",
+                    "human_readable_role_for_display": "Editor",
+                    "id": 7461491,
+                    "iq": 261357,
+                    "login": "DrewAPicasso",
+                    "name": "DrewAPicasso",
+                    "role_for_display": "editor",
+                    "url": "https://genius.com/DrewAPicasso",
+                    "current_user_metadata": {
+                      "permissions": [],
+                      "excluded_permissions": [
+                        "follow"
+                      ],
+                      "interactions": {
+                        "following": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "cosigned_by": [],
+              "rejection_comment": null,
+              "verified_by": null
+            }
+          ]
+        },
+        "featured_artists": [],
+        "lyrics_marked_complete_by": null,
+        "lyrics_marked_staff_approved_by": null,
+        "media": [
+          {
+            "provider": "youtube",
+            "start": 0,
+            "type": "video",
+            "url": "https://www.youtube.com/watch?v=CccnAvfLPvE"
+          },
+          {
+            "native_uri": "spotify:track:3X37NtwadSS0RM20dh2IgP",
+            "provider": "spotify",
+            "type": "audio",
+            "url": "https://open.spotify.com/track/3X37NtwadSS0RM20dh2IgP"
+          }
+        ],
+        "primary_artist": {
+          "api_path": "/artists/130",
+          "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+          "id": 130,
+          "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+          "is_meme_verified": false,
+          "is_verified": false,
+          "name": "Drake",
+          "url": "https://genius.com/artists/Drake"
+        },
+        "primary_artists": [
+          {
+            "api_path": "/artists/130",
+            "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+            "id": 130,
+            "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Drake",
+            "url": "https://genius.com/artists/Drake"
+          }
+        ],
+        "producer_artists": [
+          {
+            "api_path": "/artists/27474",
+            "header_image_url": "https://images.genius.com/b40c29059d5e6320523e2f226803264e.722x516x1.jpg",
+            "id": 27474,
+            "image_url": "https://images.genius.com/b40c29059d5e6320523e2f226803264e.722x516x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Dahi",
+            "url": "https://genius.com/artists/Dahi",
+            "iq": 1495
+          },
+          {
+            "api_path": "/artists/17207",
+            "header_image_url": "https://images.genius.com/0df3b9c6f88ad3731fc9e5956263da48.1000x1000x1.jpg",
+            "id": 17207,
+            "image_url": "https://images.genius.com/0df3b9c6f88ad3731fc9e5956263da48.1000x1000x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Detail",
+            "url": "https://genius.com/artists/Detail"
+          }
+        ],
+        "song_relationships": [
+          {
+            "relationship_type": "samples",
+            "type": "samples",
+            "url": "https://genius.com/Drake-worst-behavior-sample/samples",
+            "songs": [
+              {
+                "annotation_count": 41,
+                "api_path": "/songs/79",
+                "artist_names": "The Notorious B.I.G. (Ft. Diddy & Ma$e)",
+                "full_title": "Mo' Money Mo' Problems by The Notorious B.I.G. (Ft. Diddy & Ma$e)",
+                "header_image_thumbnail_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.300x300x1.png",
+                "header_image_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.1000x1000x1.png",
+                "id": 79,
+                "lyrics_owner_id": 12,
+                "lyrics_state": "complete",
+                "path": "/The-notorious-big-mo-money-mo-problems-lyrics",
+                "primary_artist_names": "The Notorious B.I.G.",
+                "pyongs_count": 89,
+                "relationships_index_url": "https://genius.com/The-notorious-big-mo-money-mo-problems-sample",
+                "release_date_components": {
+                  "year": 1997,
+                  "month": 3,
+                  "day": 25
+                },
+                "release_date_for_display": "March 25, 1997",
+                "release_date_with_abbreviated_month_for_display": "Mar. 25, 1997",
+                "song_art_image_thumbnail_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 2,
+                  "hot": false,
+                  "pageviews": 970003
+                },
+                "title": "Mo’ Money Mo’ Problems",
+                "title_with_featured": "Mo' Money Mo' Problems (Ft. Diddy & Ma$e)",
+                "url": "https://genius.com/The-notorious-big-mo-money-mo-problems-lyrics",
+                "featured_artists": [
+                  {
+                    "api_path": "/artists/249",
+                    "header_image_url": "https://images.genius.com/1188e14a2d4aea326dba1017bec4068d.375x242x1.jpg",
+                    "id": 249,
+                    "image_url": "https://images.genius.com/b2417780460466574f6615cb26e97c6c.899x899x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Ma$e",
+                    "url": "https://genius.com/artists/Ma-e",
+                    "iq": 2238
+                  },
+                  {
+                    "api_path": "/artists/82",
+                    "header_image_url": "https://filepicker-images.genius.com/YxmnpOsRKqedMBLugK8l_oie_15632191kzs2eJ0.jpg",
+                    "id": 82,
+                    "image_url": "https://filepicker-images.genius.com/jGCvpYJWTjKU9zcg01aa_photo.jpg",
+                    "is_meme_verified": true,
+                    "is_verified": true,
+                    "name": "Diddy",
+                    "url": "https://genius.com/artists/Diddy",
+                    "iq": 683
+                  }
+                ],
+                "primary_artist": {
+                  "api_path": "/artists/22",
+                  "header_image_url": "https://images.genius.com/1b66a66f14427bb384ff3c8ccecc05f7.1000x333x1.jpg",
+                  "id": 22,
+                  "image_url": "https://images.genius.com/a1028eceafa83e5118ed88c3b0d2b854.500x500x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "The Notorious B.I.G.",
+                  "url": "https://genius.com/artists/The-notorious-big"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/22",
+                    "header_image_url": "https://images.genius.com/1b66a66f14427bb384ff3c8ccecc05f7.1000x333x1.jpg",
+                    "id": 22,
+                    "image_url": "https://images.genius.com/a1028eceafa83e5118ed88c3b0d2b854.500x500x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "The Notorious B.I.G.",
+                    "url": "https://genius.com/artists/The-notorious-big"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "relationship_type": "sampled_in",
+            "type": "sampled_in",
+            "url": "https://genius.com/Drake-worst-behavior-sample/samples",
+            "songs": [
+              {
+                "annotation_count": 0,
+                "api_path": "/songs/3298891",
+                "artist_names": "Skabzemortal",
+                "full_title": "#Cinemafridays by Skabzemortal",
+                "header_image_thumbnail_url": "https://images.genius.com/abcb3c6accb5f7a844406678e0bd1e22.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/abcb3c6accb5f7a844406678e0bd1e22.300x300x1.jpg",
+                "id": 3298891,
+                "lyrics_owner_id": 5404344,
+                "lyrics_state": "complete",
+                "path": "/Skabzemortal-cinemafridays-lyrics",
+                "primary_artist_names": "Skabzemortal",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Skabzemortal-cinemafridays-sample",
+                "release_date_components": {
+                  "year": 2017,
+                  "month": 8,
+                  "day": 10
+                },
+                "release_date_for_display": "August 10, 2017",
+                "release_date_with_abbreviated_month_for_display": "Aug. 10, 2017",
+                "song_art_image_thumbnail_url": "https://images.genius.com/abcb3c6accb5f7a844406678e0bd1e22.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/abcb3c6accb5f7a844406678e0bd1e22.300x300x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "#Cinemafridays",
+                "title_with_featured": "#Cinemafridays",
+                "url": "https://genius.com/Skabzemortal-cinemafridays-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/2635164",
+                  "header_image_url": "https://images.genius.com/b2dac872375587ccd0c4771878e322c9.1000x667x1.jpg",
+                  "id": 2635164,
+                  "image_url": "https://images.genius.com/a1ad60239b7aa59225fd707129221fc7.1000x1000x1.webp",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Skabzemortal",
+                  "url": "https://genius.com/artists/Skabzemortal"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/2635164",
+                    "header_image_url": "https://images.genius.com/b2dac872375587ccd0c4771878e322c9.1000x667x1.jpg",
+                    "id": 2635164,
+                    "image_url": "https://images.genius.com/a1ad60239b7aa59225fd707129221fc7.1000x1000x1.webp",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Skabzemortal",
+                    "url": "https://genius.com/artists/Skabzemortal"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 11,
+                "api_path": "/songs/308760",
+                "artist_names": "Blackwood DMV",
+                "full_title": "Worst Behavior Freestyle (Live) by Blackwood DMV",
+                "header_image_thumbnail_url": "https://images.genius.com/26545aa9cf5f1397174a86e1aef081ce.300x300x1.png",
+                "header_image_url": "https://images.genius.com/26545aa9cf5f1397174a86e1aef081ce.1000x1000x1.png",
+                "id": 308760,
+                "lyrics_owner_id": 186549,
+                "lyrics_state": "complete",
+                "path": "/Blackwood-dmv-worst-behavior-freestyle-live-lyrics",
+                "primary_artist_names": "Blackwood DMV",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Blackwood-dmv-worst-behavior-freestyle-live-sample",
+                "release_date_components": {
+                  "year": 2013,
+                  "month": 12,
+                  "day": 18
+                },
+                "release_date_for_display": "December 18, 2013",
+                "release_date_with_abbreviated_month_for_display": "Dec. 18, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/26545aa9cf5f1397174a86e1aef081ce.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/26545aa9cf5f1397174a86e1aef081ce.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "Worst Behavior Freestyle (Live)",
+                "title_with_featured": "Worst Behavior Freestyle (Live)",
+                "url": "https://genius.com/Blackwood-dmv-worst-behavior-freestyle-live-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/38090",
+                  "header_image_url": "https://images.genius.com/ec0bd9b480d3139ce806485dcdcd1c67.400x400x1.jpg",
+                  "id": 38090,
+                  "image_url": "https://images.genius.com/26545aa9cf5f1397174a86e1aef081ce.1000x1000x1.png",
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "name": "Blackwood DMV",
+                  "url": "https://genius.com/artists/Blackwood-dmv",
+                  "iq": 3044
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/38090",
+                    "header_image_url": "https://images.genius.com/ec0bd9b480d3139ce806485dcdcd1c67.400x400x1.jpg",
+                    "id": 38090,
+                    "image_url": "https://images.genius.com/26545aa9cf5f1397174a86e1aef081ce.1000x1000x1.png",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Blackwood DMV",
+                    "url": "https://genius.com/artists/Blackwood-dmv",
+                    "iq": 3044
+                  }
+                ]
+              },
+              {
+                "annotation_count": 1,
+                "api_path": "/songs/6583354",
+                "artist_names": "Bluvercetti (Ft. Pmz)",
+                "full_title": "Wave (Album Version) by Bluvercetti (Ft. Pmz)",
+                "header_image_thumbnail_url": "https://images.genius.com/2d969e1bdf4fa0fdb3a116a02ab76a79.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/2d969e1bdf4fa0fdb3a116a02ab76a79.1000x1000x1.jpg",
+                "id": 6583354,
+                "lyrics_owner_id": 11912940,
+                "lyrics_state": "complete",
+                "path": "/Bluvercetti-wave-album-version-lyrics",
+                "primary_artist_names": "Bluvercetti",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Bluvercetti-wave-album-version-sample",
+                "release_date_components": {
+                  "year": 2021,
+                  "month": 3,
+                  "day": 11
+                },
+                "release_date_for_display": "March 11, 2021",
+                "release_date_with_abbreviated_month_for_display": "Mar. 11, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/2d969e1bdf4fa0fdb3a116a02ab76a79.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/2d969e1bdf4fa0fdb3a116a02ab76a79.1000x1000x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 1,
+                  "hot": false
+                },
+                "title": "Wave (Album Version)",
+                "title_with_featured": "Wave (Album Version) (Ft. Pmz)",
+                "url": "https://genius.com/Bluvercetti-wave-album-version-lyrics",
+                "featured_artists": [
+                  {
+                    "api_path": "/artists/484862",
+                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "id": 484862,
+                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Pmz",
+                    "url": "https://genius.com/artists/Pmz"
+                  }
+                ],
+                "primary_artist": {
+                  "api_path": "/artists/2067924",
+                  "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                  "id": 2067924,
+                  "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Bluvercetti",
+                  "url": "https://genius.com/artists/Bluvercetti"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/2067924",
+                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "id": 2067924,
+                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Bluvercetti",
+                    "url": "https://genius.com/artists/Bluvercetti"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 20,
+                "api_path": "/songs/2970857",
+                "artist_names": "Raffa Moreira (Ft. Makalister)",
+                "full_title": "Sozinho no Sukyia by Raffa Moreira (Ft. Makalister)",
+                "header_image_thumbnail_url": "https://images.genius.com/b91b9bdebd1858dd37c3fe7b7b05153e.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/b91b9bdebd1858dd37c3fe7b7b05153e.500x500x1.jpg",
+                "id": 2970857,
+                "lyrics_owner_id": 59324,
+                "lyrics_state": "complete",
+                "path": "/Raffa-moreira-sozinho-no-sukyia-lyrics",
+                "primary_artist_names": "Raffa Moreira",
+                "pyongs_count": 5,
+                "relationships_index_url": "https://genius.com/Raffa-moreira-sozinho-no-sukyia-sample",
+                "release_date_components": {
+                  "year": 2017,
+                  "month": 1,
+                  "day": 30
+                },
+                "release_date_for_display": "January 30, 2017",
+                "release_date_with_abbreviated_month_for_display": "Jan. 30, 2017",
+                "song_art_image_thumbnail_url": "https://images.genius.com/b91b9bdebd1858dd37c3fe7b7b05153e.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/b91b9bdebd1858dd37c3fe7b7b05153e.500x500x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false,
+                  "pageviews": 18009
+                },
+                "title": "Sozinho no Sukyia",
+                "title_with_featured": "Sozinho no Sukyia (Ft. Makalister)",
+                "url": "https://genius.com/Raffa-moreira-sozinho-no-sukyia-lyrics",
+                "featured_artists": [
+                  {
+                    "api_path": "/artists/118564",
+                    "header_image_url": "https://images.genius.com/89a66311950051ff4f62cb754db82070.1000x663x1.jpg",
+                    "id": 118564,
+                    "image_url": "https://images.genius.com/79c3f213aab68f742253527975a29d76.487x487x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Makalister",
+                    "url": "https://genius.com/artists/Makalister",
+                    "iq": 880
+                  }
+                ],
+                "primary_artist": {
+                  "api_path": "/artists/637438",
+                  "header_image_url": "https://images.genius.com/b90ad6950a98280fd8d52dc42411e46c.581x204x1.png",
+                  "id": 637438,
+                  "image_url": "https://images.genius.com/60a3225ceb3cc5cdc1f88153aaee2ec8.1000x1000x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Raffa Moreira",
+                  "url": "https://genius.com/artists/Raffa-moreira"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/637438",
+                    "header_image_url": "https://images.genius.com/b90ad6950a98280fd8d52dc42411e46c.581x204x1.png",
+                    "id": 637438,
+                    "image_url": "https://images.genius.com/60a3225ceb3cc5cdc1f88153aaee2ec8.1000x1000x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Raffa Moreira",
+                    "url": "https://genius.com/artists/Raffa-moreira"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 19,
+                "api_path": "/songs/2840189",
+                "artist_names": "Soos",
+                "full_title": "Hold My Phone #SoGoneChallenge by Soos",
+                "header_image_thumbnail_url": "https://images.genius.com/2720d5dffb911d800a98caba9e3502f6.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/2720d5dffb911d800a98caba9e3502f6.800x800x1.jpg",
+                "id": 2840189,
+                "lyrics_owner_id": 3607868,
+                "lyrics_state": "complete",
+                "path": "/Soos-hold-my-phone-sogonechallenge-lyrics",
+                "primary_artist_names": "Soos",
+                "pyongs_count": 1,
+                "relationships_index_url": "https://genius.com/Soos-hold-my-phone-sogonechallenge-sample",
+                "release_date_components": {
+                  "year": 2016,
+                  "month": 8,
+                  "day": 15
+                },
+                "release_date_for_display": "August 15, 2016",
+                "release_date_with_abbreviated_month_for_display": "Aug. 15, 2016",
+                "song_art_image_thumbnail_url": "https://images.genius.com/2720d5dffb911d800a98caba9e3502f6.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/2720d5dffb911d800a98caba9e3502f6.800x800x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 19,
+                  "hot": false
+                },
+                "title": "Hold My Phone #SoGoneChallenge",
+                "title_with_featured": "Hold My Phone #SoGoneChallenge",
+                "url": "https://genius.com/Soos-hold-my-phone-sogonechallenge-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/990977",
+                  "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                  "id": 990977,
+                  "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Soos",
+                  "url": "https://genius.com/artists/Soos"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/990977",
+                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "id": 990977,
+                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1741036777",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Soos",
+                    "url": "https://genius.com/artists/Soos"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "relationship_type": "interpolates",
+            "type": "interpolates",
+            "url": "https://genius.com/Drake-worst-behavior-sample/interpolations",
+            "songs": [
+              {
+                "annotation_count": 41,
+                "api_path": "/songs/79",
+                "artist_names": "The Notorious B.I.G. (Ft. Diddy & Ma$e)",
+                "full_title": "Mo' Money Mo' Problems by The Notorious B.I.G. (Ft. Diddy & Ma$e)",
+                "header_image_thumbnail_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.300x300x1.png",
+                "header_image_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.1000x1000x1.png",
+                "id": 79,
+                "lyrics_owner_id": 12,
+                "lyrics_state": "complete",
+                "path": "/The-notorious-big-mo-money-mo-problems-lyrics",
+                "primary_artist_names": "The Notorious B.I.G.",
+                "pyongs_count": 89,
+                "relationships_index_url": "https://genius.com/The-notorious-big-mo-money-mo-problems-sample",
+                "release_date_components": {
+                  "year": 1997,
+                  "month": 3,
+                  "day": 25
+                },
+                "release_date_for_display": "March 25, 1997",
+                "release_date_with_abbreviated_month_for_display": "Mar. 25, 1997",
+                "song_art_image_thumbnail_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/d7c37bfa91c155503ffd68a2339826b1.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 2,
+                  "hot": false,
+                  "pageviews": 970003
+                },
+                "title": "Mo’ Money Mo’ Problems",
+                "title_with_featured": "Mo' Money Mo' Problems (Ft. Diddy & Ma$e)",
+                "url": "https://genius.com/The-notorious-big-mo-money-mo-problems-lyrics",
+                "featured_artists": [
+                  {
+                    "api_path": "/artists/249",
+                    "header_image_url": "https://images.genius.com/1188e14a2d4aea326dba1017bec4068d.375x242x1.jpg",
+                    "id": 249,
+                    "image_url": "https://images.genius.com/b2417780460466574f6615cb26e97c6c.899x899x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Ma$e",
+                    "url": "https://genius.com/artists/Ma-e",
+                    "iq": 2238
+                  },
+                  {
+                    "api_path": "/artists/82",
+                    "header_image_url": "https://filepicker-images.genius.com/YxmnpOsRKqedMBLugK8l_oie_15632191kzs2eJ0.jpg",
+                    "id": 82,
+                    "image_url": "https://filepicker-images.genius.com/jGCvpYJWTjKU9zcg01aa_photo.jpg",
+                    "is_meme_verified": true,
+                    "is_verified": true,
+                    "name": "Diddy",
+                    "url": "https://genius.com/artists/Diddy",
+                    "iq": 683
+                  }
+                ],
+                "primary_artist": {
+                  "api_path": "/artists/22",
+                  "header_image_url": "https://images.genius.com/1b66a66f14427bb384ff3c8ccecc05f7.1000x333x1.jpg",
+                  "id": 22,
+                  "image_url": "https://images.genius.com/a1028eceafa83e5118ed88c3b0d2b854.500x500x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "The Notorious B.I.G.",
+                  "url": "https://genius.com/artists/The-notorious-big"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/22",
+                    "header_image_url": "https://images.genius.com/1b66a66f14427bb384ff3c8ccecc05f7.1000x333x1.jpg",
+                    "id": 22,
+                    "image_url": "https://images.genius.com/a1028eceafa83e5118ed88c3b0d2b854.500x500x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "The Notorious B.I.G.",
+                    "url": "https://genius.com/artists/The-notorious-big"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "relationship_type": "interpolated_by",
+            "type": "interpolated_by",
+            "url": "https://genius.com/Drake-worst-behavior-sample/interpolations",
+            "songs": [
+              {
+                "annotation_count": 0,
+                "api_path": "/songs/10021794",
+                "artist_names": "Spectre (Rapper)",
+                "full_title": "Away From Home by Spectre (Rapper)",
+                "header_image_thumbnail_url": "https://images.genius.com/254894d77e90bf97dd05b5f117cdcc9a.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/254894d77e90bf97dd05b5f117cdcc9a.415x415x1.jpg",
+                "id": 10021794,
+                "lyrics_owner_id": 15254526,
+                "lyrics_state": "complete",
+                "path": "/Spectre-rapper-away-from-home-lyrics",
+                "primary_artist_names": "Spectre (Rapper)",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Spectre-rapper-away-from-home-sample",
+                "release_date_components": {
+                  "year": 2023,
+                  "month": 10,
+                  "day": 16
+                },
+                "release_date_for_display": "October 16, 2023",
+                "release_date_with_abbreviated_month_for_display": "Oct. 16, 2023",
+                "song_art_image_thumbnail_url": "https://images.genius.com/254894d77e90bf97dd05b5f117cdcc9a.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/254894d77e90bf97dd05b5f117cdcc9a.415x415x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "Away From Home",
+                "title_with_featured": "Away From Home",
+                "url": "https://genius.com/Spectre-rapper-away-from-home-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/3416128",
+                  "header_image_url": "https://images.genius.com/41927ed5fa9ffd6ff29f2f2daef3baff.400x400x1.jpg",
+                  "id": 3416128,
+                  "image_url": "https://images.genius.com/41927ed5fa9ffd6ff29f2f2daef3baff.400x400x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Spectre (Rapper)",
+                  "url": "https://genius.com/artists/Spectre-rapper"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/3416128",
+                    "header_image_url": "https://images.genius.com/41927ed5fa9ffd6ff29f2f2daef3baff.400x400x1.jpg",
+                    "id": 3416128,
+                    "image_url": "https://images.genius.com/41927ed5fa9ffd6ff29f2f2daef3baff.400x400x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Spectre (Rapper)",
+                    "url": "https://genius.com/artists/Spectre-rapper"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 44,
+                "api_path": "/songs/9592380",
+                "artist_names": "Drake",
+                "full_title": "Away From Home by Drake",
+                "header_image_thumbnail_url": "https://images.genius.com/bc3bc77f6ba7f01baf80a8ab795f9760.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/bc3bc77f6ba7f01baf80a8ab795f9760.1000x1000x1.jpg",
+                "id": 9592380,
+                "lyrics_owner_id": 7770942,
+                "lyrics_state": "complete",
+                "path": "/Drake-away-from-home-lyrics",
+                "primary_artist_names": "Drake",
+                "pyongs_count": 2,
+                "relationships_index_url": "https://genius.com/Drake-away-from-home-sample",
+                "release_date_components": {
+                  "year": 2023,
+                  "month": 10,
+                  "day": 6
+                },
+                "release_date_for_display": "October 6, 2023",
+                "release_date_with_abbreviated_month_for_display": "Oct. 6, 2023",
+                "song_art_image_thumbnail_url": "https://images.genius.com/bc3bc77f6ba7f01baf80a8ab795f9760.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/bc3bc77f6ba7f01baf80a8ab795f9760.1000x1000x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 20,
+                  "hot": false,
+                  "pageviews": 282931
+                },
+                "title": "Away From Home",
+                "title_with_featured": "Away From Home",
+                "url": "https://genius.com/Drake-away-from-home-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/130",
+                  "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+                  "id": 130,
+                  "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Drake",
+                  "url": "https://genius.com/artists/Drake"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/130",
+                    "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+                    "id": 130,
+                    "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Drake",
+                    "url": "https://genius.com/artists/Drake"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 15,
+                "api_path": "/songs/426742",
+                "artist_names": "Mac Miller",
+                "full_title": "Inside Outside by Mac Miller",
+                "header_image_thumbnail_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.999x999x1.jpg",
+                "id": 426742,
+                "lyrics_owner_id": 282633,
+                "lyrics_state": "complete",
+                "path": "/Mac-miller-inside-outside-lyrics",
+                "primary_artist_names": "Mac Miller",
+                "pyongs_count": 27,
+                "relationships_index_url": "https://genius.com/Mac-miller-inside-outside-sample",
+                "release_date_components": {
+                  "year": 2014,
+                  "month": 5,
+                  "day": 11
+                },
+                "release_date_for_display": "May 11, 2014",
+                "release_date_with_abbreviated_month_for_display": "May 11, 2014",
+                "song_art_image_thumbnail_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.999x999x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 6,
+                  "hot": false,
+                  "pageviews": 171972
+                },
+                "title": "Inside Outside",
+                "title_with_featured": "Inside Outside",
+                "url": "https://genius.com/Mac-miller-inside-outside-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/820",
+                  "header_image_url": "https://images.genius.com/3886cfd16c6087b2a926997fdaf8cc5d.300x300x1.png",
+                  "id": 820,
+                  "image_url": "https://images.genius.com/6ebe17c1569f62046b61f04a90fd9e5a.1000x1000x1.png",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Mac Miller",
+                  "url": "https://genius.com/artists/Mac-miller",
+                  "iq": 45782
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/820",
+                    "header_image_url": "https://images.genius.com/3886cfd16c6087b2a926997fdaf8cc5d.300x300x1.png",
+                    "id": 820,
+                    "image_url": "https://images.genius.com/6ebe17c1569f62046b61f04a90fd9e5a.1000x1000x1.png",
+                    "is_meme_verified": true,
+                    "is_verified": true,
+                    "name": "Mac Miller",
+                    "url": "https://genius.com/artists/Mac-miller",
+                    "iq": 45782
+                  }
+                ]
+              },
+              {
+                "annotation_count": 0,
+                "api_path": "/songs/8272926",
+                "artist_names": "Amiah’s Playtime",
+                "full_title": "Never Play Without Me by Amiah’s Playtime",
+                "header_image_thumbnail_url": "https://images.genius.com/1355a9b61ba5f07721fa48b0c48185ed.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/1355a9b61ba5f07721fa48b0c48185ed.720x720x1.jpg",
+                "id": 8272926,
+                "lyrics_owner_id": 14969574,
+                "lyrics_state": "complete",
+                "path": "/Amiahs-playtime-never-play-without-me-lyrics",
+                "primary_artist_names": "Amiah’s Playtime",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Amiahs-playtime-never-play-without-me-sample",
+                "release_date_components": {
+                  "year": 2022,
+                  "month": 8,
+                  "day": 2
+                },
+                "release_date_for_display": "August 2, 2022",
+                "release_date_with_abbreviated_month_for_display": "Aug. 2, 2022",
+                "song_art_image_thumbnail_url": "https://images.genius.com/1355a9b61ba5f07721fa48b0c48185ed.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/1355a9b61ba5f07721fa48b0c48185ed.720x720x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "Never Play Without Me",
+                "title_with_featured": "Never Play Without Me",
+                "url": "https://genius.com/Amiahs-playtime-never-play-without-me-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/2907889",
+                  "header_image_url": "https://images.genius.com/1b284bbde00c6168b563c9667dbc3a61.349x349x1.jpg",
+                  "id": 2907889,
+                  "image_url": "https://images.genius.com/1b284bbde00c6168b563c9667dbc3a61.349x349x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Amiah’s Playtime",
+                  "url": "https://genius.com/artists/Amiahs-playtime"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/2907889",
+                    "header_image_url": "https://images.genius.com/1b284bbde00c6168b563c9667dbc3a61.349x349x1.jpg",
+                    "id": 2907889,
+                    "image_url": "https://images.genius.com/1b284bbde00c6168b563c9667dbc3a61.349x349x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Amiah’s Playtime",
+                    "url": "https://genius.com/artists/Amiahs-playtime"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 0,
+                "api_path": "/songs/7012254",
+                "artist_names": "AntsLive",
+                "full_title": "HBK by AntsLive",
+                "header_image_thumbnail_url": "https://images.genius.com/5d6469ca0a4ee19a7731141f78fa37c6.300x300x1.png",
+                "header_image_url": "https://images.genius.com/5d6469ca0a4ee19a7731141f78fa37c6.1000x1000x1.png",
+                "id": 7012254,
+                "lyrics_owner_id": 8040656,
+                "lyrics_state": "complete",
+                "path": "/Antslive-hbk-lyrics",
+                "primary_artist_names": "AntsLive",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Antslive-hbk-sample",
+                "release_date_components": {
+                  "year": 2021,
+                  "month": 7,
+                  "day": 14
+                },
+                "release_date_for_display": "July 14, 2021",
+                "release_date_with_abbreviated_month_for_display": "Jul. 14, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/5d6469ca0a4ee19a7731141f78fa37c6.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/5d6469ca0a4ee19a7731141f78fa37c6.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "HBK",
+                "title_with_featured": "HBK",
+                "url": "https://genius.com/Antslive-hbk-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/1685060",
+                  "header_image_url": "https://images.genius.com/a4c4737784e6f534cc2f6d4edda7196c.598x598x1.jpg",
+                  "id": 1685060,
+                  "image_url": "https://images.genius.com/a4c4737784e6f534cc2f6d4edda7196c.598x598x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "AntsLive",
+                  "url": "https://genius.com/artists/Antslive"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/1685060",
+                    "header_image_url": "https://images.genius.com/a4c4737784e6f534cc2f6d4edda7196c.598x598x1.jpg",
+                    "id": 1685060,
+                    "image_url": "https://images.genius.com/a4c4737784e6f534cc2f6d4edda7196c.598x598x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "AntsLive",
+                    "url": "https://genius.com/artists/Antslive"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 26,
+                "api_path": "/songs/402505",
+                "artist_names": "Mac Miller (Ft. Rick Ross)",
+                "full_title": "Insomniak by Mac Miller (Ft. Rick Ross)",
+                "header_image_thumbnail_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.999x999x1.jpg",
+                "id": 402505,
+                "lyrics_owner_id": 104344,
+                "lyrics_state": "complete",
+                "path": "/Mac-miller-insomniak-lyrics",
+                "primary_artist_names": "Mac Miller",
+                "pyongs_count": 93,
+                "relationships_index_url": "https://genius.com/Mac-miller-insomniak-sample",
+                "release_date_components": {
+                  "year": 2014,
+                  "month": 5,
+                  "day": 11
+                },
+                "release_date_for_display": "May 11, 2014",
+                "release_date_with_abbreviated_month_for_display": "May 11, 2014",
+                "song_art_image_thumbnail_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/6476e95bec5c6ed1b91e902690b816aa.999x999x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 5,
+                  "hot": false,
+                  "pageviews": 228638
+                },
+                "title": "Insomniak",
+                "title_with_featured": "Insomniak (Ft. Rick Ross)",
+                "url": "https://genius.com/Mac-miller-insomniak-lyrics",
+                "featured_artists": [
+                  {
+                    "api_path": "/artists/88",
+                    "header_image_url": "https://images.genius.com/63765912cb46406696fba044850e3c1d.770x588x1.jpg",
+                    "id": 88,
+                    "image_url": "https://images.genius.com/3dce21029cdd8aab73eb473e015807d5.1000x1000x1.jpg",
+                    "is_meme_verified": true,
+                    "is_verified": true,
+                    "name": "Rick Ross",
+                    "url": "https://genius.com/artists/Rick-ross",
+                    "iq": 5124
+                  }
+                ],
+                "primary_artist": {
+                  "api_path": "/artists/820",
+                  "header_image_url": "https://images.genius.com/3886cfd16c6087b2a926997fdaf8cc5d.300x300x1.png",
+                  "id": 820,
+                  "image_url": "https://images.genius.com/6ebe17c1569f62046b61f04a90fd9e5a.1000x1000x1.png",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Mac Miller",
+                  "url": "https://genius.com/artists/Mac-miller",
+                  "iq": 45782
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/820",
+                    "header_image_url": "https://images.genius.com/3886cfd16c6087b2a926997fdaf8cc5d.300x300x1.png",
+                    "id": 820,
+                    "image_url": "https://images.genius.com/6ebe17c1569f62046b61f04a90fd9e5a.1000x1000x1.png",
+                    "is_meme_verified": true,
+                    "is_verified": true,
+                    "name": "Mac Miller",
+                    "url": "https://genius.com/artists/Mac-miller",
+                    "iq": 45782
+                  }
+                ]
+              },
+              {
+                "annotation_count": 14,
+                "api_path": "/songs/3794469",
+                "artist_names": "JUSTHIS (저스디스), Kid Milli (키드밀리), NO:EL & YANGHONGWON (양홍원)",
+                "full_title": "IndiGO by JUSTHIS (저스디스), Kid Milli (키드밀리), NO:EL & YANGHONGWON (양홍원)",
+                "header_image_thumbnail_url": "https://images.genius.com/950be73637b7509a8f3d73fd44088963.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/950be73637b7509a8f3d73fd44088963.1000x1000x1.jpg",
+                "id": 3794469,
+                "lyrics_owner_id": 5381630,
+                "lyrics_state": "complete",
+                "path": "/Justhis-kid-milli-no-el-and-yanghongwon-indigo-lyrics",
+                "primary_artist_names": "JUSTHIS (저스디스), Kid Milli (키드밀리), NO:EL & YANGHONGWON (양홍원)",
+                "pyongs_count": 7,
+                "relationships_index_url": "https://genius.com/Justhis-kid-milli-no-el-and-yanghongwon-indigo-sample",
+                "release_date_components": {
+                  "year": 2018,
+                  "month": 6,
+                  "day": 24
+                },
+                "release_date_for_display": "June 24, 2018",
+                "release_date_with_abbreviated_month_for_display": "Jun. 24, 2018",
+                "song_art_image_thumbnail_url": "https://images.genius.com/950be73637b7509a8f3d73fd44088963.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/950be73637b7509a8f3d73fd44088963.1000x1000x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 4,
+                  "hot": false,
+                  "pageviews": 86193
+                },
+                "title": "IndiGO",
+                "title_with_featured": "IndiGO",
+                "url": "https://genius.com/Justhis-kid-milli-no-el-and-yanghongwon-indigo-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/614519",
+                  "header_image_url": "https://images.genius.com/ad1708e922ce7527ae7a6bd64f2af549.600x600x1.jpg",
+                  "id": 614519,
+                  "image_url": "https://images.genius.com/53fa5cb3ed602ba3153206feff3b484a.600x600x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "JUSTHIS (저스디스)",
+                  "url": "https://genius.com/artists/Justhis"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/614519",
+                    "header_image_url": "https://images.genius.com/ad1708e922ce7527ae7a6bd64f2af549.600x600x1.jpg",
+                    "id": 614519,
+                    "image_url": "https://images.genius.com/53fa5cb3ed602ba3153206feff3b484a.600x600x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "JUSTHIS (저스디스)",
+                    "url": "https://genius.com/artists/Justhis"
+                  },
+                  {
+                    "api_path": "/artists/1190171",
+                    "header_image_url": "https://images.genius.com/c90e531d4baf54b15b2a5278d3479d14.669x669x1.jpg",
+                    "id": 1190171,
+                    "image_url": "https://images.genius.com/c90e531d4baf54b15b2a5278d3479d14.669x669x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Kid Milli (키드밀리)",
+                    "url": "https://genius.com/artists/Kid-milli"
+                  },
+                  {
+                    "api_path": "/artists/1193184",
+                    "header_image_url": "https://images.genius.com/8674d0978d58180121844077f13dacfd.1000x500x1.jpg",
+                    "id": 1193184,
+                    "image_url": "https://images.genius.com/3d60d47e16f8ecaf208b2f398fafb29a.700x700x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "NO:EL",
+                    "url": "https://genius.com/artists/No-el"
+                  },
+                  {
+                    "api_path": "/artists/1368488",
+                    "header_image_url": "https://images.genius.com/1ff69855e91ea477c0a33665d8113ee0.393x393x1.jpg",
+                    "id": 1368488,
+                    "image_url": "https://images.genius.com/1ff69855e91ea477c0a33665d8113ee0.393x393x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "YANGHONGWON (양홍원)",
+                    "url": "https://genius.com/artists/Yanghongwon"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 19,
+                "api_path": "/songs/500858",
+                "artist_names": "Drake",
+                "full_title": "6 God by Drake",
+                "header_image_thumbnail_url": "https://images.rapgenius.com/b320542ee1788f0a26f4155de03a1111.300x300x1.png",
+                "header_image_url": "https://images.rapgenius.com/b320542ee1788f0a26f4155de03a1111.1000x1000x1.png",
+                "id": 500858,
+                "lyrics_owner_id": 172030,
+                "lyrics_state": "complete",
+                "path": "/Drake-6-god-lyrics",
+                "primary_artist_names": "Drake",
+                "pyongs_count": 671,
+                "relationships_index_url": "https://genius.com/Drake-6-god-sample",
+                "release_date_components": {
+                  "year": 2014,
+                  "month": 10,
+                  "day": 25
+                },
+                "release_date_for_display": "October 25, 2014",
+                "release_date_with_abbreviated_month_for_display": "Oct. 25, 2014",
+                "song_art_image_thumbnail_url": "https://images.rapgenius.com/b320542ee1788f0a26f4155de03a1111.300x300x1.png",
+                "song_art_image_url": "https://images.rapgenius.com/b320542ee1788f0a26f4155de03a1111.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 5,
+                  "hot": false,
+                  "pageviews": 1605882
+                },
+                "title": "6 God",
+                "title_with_featured": "6 God",
+                "url": "https://genius.com/Drake-6-god-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/130",
+                  "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+                  "id": 130,
+                  "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Drake",
+                  "url": "https://genius.com/artists/Drake"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/130",
+                    "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+                    "id": 130,
+                    "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Drake",
+                    "url": "https://genius.com/artists/Drake"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 6,
+                "api_path": "/songs/3107856",
+                "artist_names": "Octopizzo",
+                "full_title": "Could Be Us by Octopizzo",
+                "header_image_thumbnail_url": "https://images.genius.com/dc4d02e513f4db21c005926dedea72e7.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/dc4d02e513f4db21c005926dedea72e7.1000x1000x1.jpg",
+                "id": 3107856,
+                "lyrics_owner_id": 4594953,
+                "lyrics_state": "complete",
+                "path": "/Octopizzo-could-be-us-lyrics",
+                "primary_artist_names": "Octopizzo",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Octopizzo-could-be-us-sample",
+                "release_date_components": {
+                  "year": 2015,
+                  "month": 8,
+                  "day": 24
+                },
+                "release_date_for_display": "August 24, 2015",
+                "release_date_with_abbreviated_month_for_display": "Aug. 24, 2015",
+                "song_art_image_thumbnail_url": "https://images.genius.com/dc4d02e513f4db21c005926dedea72e7.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/dc4d02e513f4db21c005926dedea72e7.1000x1000x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "Could Be Us",
+                "title_with_featured": "Could Be Us",
+                "url": "https://genius.com/Octopizzo-could-be-us-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/16289",
+                  "header_image_url": "https://images.genius.com/777ee3676de6b104758f20f616d25017.860x600x1.jpg",
+                  "id": 16289,
+                  "image_url": "https://images.genius.com/7b8dcb057b2b8e08ba000be0b8df2ddb.480x480x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Octopizzo",
+                  "url": "https://genius.com/artists/Octopizzo"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/16289",
+                    "header_image_url": "https://images.genius.com/777ee3676de6b104758f20f616d25017.860x600x1.jpg",
+                    "id": 16289,
+                    "image_url": "https://images.genius.com/7b8dcb057b2b8e08ba000be0b8df2ddb.480x480x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Octopizzo",
+                    "url": "https://genius.com/artists/Octopizzo"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 90,
+                "api_path": "/songs/10341021",
+                "artist_names": "Kendrick Lamar",
+                "full_title": "euphoria by Kendrick Lamar",
+                "header_image_thumbnail_url": "https://images.genius.com/3e497e7f4219c60d8e2497fc1a4a5f68.300x300x1.png",
+                "header_image_url": "https://images.genius.com/3e497e7f4219c60d8e2497fc1a4a5f68.1000x1000x1.png",
+                "id": 10341021,
+                "lyrics_owner_id": 5748418,
+                "lyrics_state": "complete",
+                "path": "/Kendrick-lamar-euphoria-lyrics",
+                "primary_artist_names": "Kendrick Lamar",
+                "pyongs_count": 155,
+                "relationships_index_url": "https://genius.com/Kendrick-lamar-euphoria-sample",
+                "release_date_components": {
+                  "year": 2024,
+                  "month": 4,
+                  "day": 30
+                },
+                "release_date_for_display": "April 30, 2024",
+                "release_date_with_abbreviated_month_for_display": "Apr. 30, 2024",
+                "song_art_image_thumbnail_url": "https://images.genius.com/3e497e7f4219c60d8e2497fc1a4a5f68.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/3e497e7f4219c60d8e2497fc1a4a5f68.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "concurrents": 7,
+                  "hot": false,
+                  "pageviews": 10480677
+                },
+                "title": "euphoria",
+                "title_with_featured": "euphoria",
+                "url": "https://genius.com/Kendrick-lamar-euphoria-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/1421",
+                  "header_image_url": "https://images.genius.com/1d39f4a8c2906db0e696e5cc4427fa92.300x300x1.png",
+                  "id": 1421,
+                  "image_url": "https://images.genius.com/43c7fc30a6d9fd31b239bb47cf1533f4.1000x1000x1.png",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Kendrick Lamar",
+                  "url": "https://genius.com/artists/Kendrick-lamar",
+                  "iq": 64866
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/1421",
+                    "header_image_url": "https://images.genius.com/1d39f4a8c2906db0e696e5cc4427fa92.300x300x1.png",
+                    "id": 1421,
+                    "image_url": "https://images.genius.com/43c7fc30a6d9fd31b239bb47cf1533f4.1000x1000x1.png",
+                    "is_meme_verified": true,
+                    "is_verified": true,
+                    "name": "Kendrick Lamar",
+                    "url": "https://genius.com/artists/Kendrick-lamar",
+                    "iq": 64866
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "relationship_type": "cover_of",
+            "type": "cover_of",
+            "url": null,
+            "songs": []
+          },
+          {
+            "relationship_type": "covered_by",
+            "type": "covered_by",
+            "url": null,
+            "songs": [
+              {
+                "annotation_count": 1,
+                "api_path": "/songs/8410588",
+                "artist_names": "Will Williams",
+                "full_title": "Worst Feeling by Will Williams",
+                "header_image_thumbnail_url": "https://images.genius.com/ccfb1ecb2f5900e333ea02a9d0235b7e.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/ccfb1ecb2f5900e333ea02a9d0235b7e.750x750x1.jpg",
+                "id": 8410588,
+                "lyrics_owner_id": 17664475,
+                "lyrics_state": "complete",
+                "path": "/Will-williams-worst-feeling-lyrics",
+                "primary_artist_names": "Will Williams",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Will-williams-worst-feeling-sample",
+                "release_date_components": {
+                  "year": 2014,
+                  "month": 7,
+                  "day": 29
+                },
+                "release_date_for_display": "July 29, 2014",
+                "release_date_with_abbreviated_month_for_display": "Jul. 29, 2014",
+                "song_art_image_thumbnail_url": "https://images.genius.com/ccfb1ecb2f5900e333ea02a9d0235b7e.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/ccfb1ecb2f5900e333ea02a9d0235b7e.750x750x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 1,
+                  "hot": false
+                },
+                "title": "Worst Feeling",
+                "title_with_featured": "Worst Feeling",
+                "url": "https://genius.com/Will-williams-worst-feeling-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/161800",
+                  "header_image_url": "https://images.genius.com/550a8f4e771186fb7decdb707277d773.812x491x1.jpg",
+                  "id": 161800,
+                  "image_url": "https://images.genius.com/133c67c41309f6e180cdd5f9201a558f.725x725x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Will Williams",
+                  "url": "https://genius.com/artists/Will-williams"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/161800",
+                    "header_image_url": "https://images.genius.com/550a8f4e771186fb7decdb707277d773.812x491x1.jpg",
+                    "id": 161800,
+                    "image_url": "https://images.genius.com/133c67c41309f6e180cdd5f9201a558f.725x725x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Will Williams",
+                    "url": "https://genius.com/artists/Will-williams"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "relationship_type": "remix_of",
+            "type": "remix_of",
+            "url": "https://genius.com/Elton-john-and-britney-spears-hold-me-closer-sample/remixes",
+            "songs": []
+          },
+          {
+            "relationship_type": "remixed_by",
+            "type": "remixed_by",
+            "url": null,
+            "songs": []
+          },
+          {
+            "relationship_type": "live_version_of",
+            "type": "live_version_of",
+            "url": null,
+            "songs": []
+          },
+          {
+            "relationship_type": "performed_live_as",
+            "type": "performed_live_as",
+            "url": null,
+            "songs": []
+          },
+          {
+            "relationship_type": "translation_of",
+            "type": "translation_of",
+            "url": null,
+            "songs": []
+          },
+          {
+            "relationship_type": "translations",
+            "type": "translations",
+            "url": "https://genius.com/Drake-worst-behavior-sample/translations",
+            "songs": [
+              {
+                "annotation_count": 3,
+                "api_path": "/songs/6341855",
+                "artist_names": "Genius Türkçe Çeviri",
+                "full_title": "Drake - Worst Behavior (Türkçe Çeviri) by Genius Türkçe Çeviri",
+                "header_image_thumbnail_url": "https://images.genius.com/e1b1a6d7991d31c272ca24a63d87f751.220x220x1.jpg",
+                "header_image_url": "https://images.genius.com/e1b1a6d7991d31c272ca24a63d87f751.220x220x1.jpg",
+                "id": 6341855,
+                "lyrics_owner_id": 12635883,
+                "lyrics_state": "complete",
+                "path": "/Genius-turkce-ceviri-drake-worst-behavior-turkce-ceviri-lyrics",
+                "primary_artist_names": "Genius Türkçe Çeviri",
+                "pyongs_count": 4,
+                "relationships_index_url": "https://genius.com/Genius-turkce-ceviri-drake-worst-behavior-turkce-ceviri-sample",
+                "release_date_components": {
+                  "year": 2013,
+                  "month": 9,
+                  "day": 24
+                },
+                "release_date_for_display": "September 24, 2013",
+                "release_date_with_abbreviated_month_for_display": "Sep. 24, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/e1b1a6d7991d31c272ca24a63d87f751.220x220x1.jpg",
+                "song_art_image_url": "https://images.genius.com/e1b1a6d7991d31c272ca24a63d87f751.220x220x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 2,
+                  "hot": false
+                },
+                "title": "Drake - Worst Behavior (Türkçe Çeviri)",
+                "title_with_featured": "Drake - Worst Behavior (Türkçe Çeviri)",
+                "url": "https://genius.com/Genius-turkce-ceviri-drake-worst-behavior-turkce-ceviri-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/569121",
+                  "header_image_url": "https://images.genius.com/6f30793e5dcbf4ab19b04f3ffbc99ffb.1000x244x1.png",
+                  "id": 569121,
+                  "image_url": "https://images.genius.com/819b23743176d446430d07d83eb354e5.1000x1000x1.png",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Genius Türkçe Çeviri",
+                  "url": "https://genius.com/artists/Genius-turkce-ceviri"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/569121",
+                    "header_image_url": "https://images.genius.com/6f30793e5dcbf4ab19b04f3ffbc99ffb.1000x244x1.png",
+                    "id": 569121,
+                    "image_url": "https://images.genius.com/819b23743176d446430d07d83eb354e5.1000x1000x1.png",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Genius Türkçe Çeviri",
+                    "url": "https://genius.com/artists/Genius-turkce-ceviri"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 1,
+                "api_path": "/songs/5821155",
+                "artist_names": "Genius Brasil Traduções",
+                "full_title": "Drake - Worst Behavior (Tradução em Português) by Genius Brasil Traduções",
+                "header_image_thumbnail_url": "https://images.genius.com/fa61eb6a4562b001280246ea4208d4a2.300x300x1.png",
+                "header_image_url": "https://images.genius.com/fa61eb6a4562b001280246ea4208d4a2.1000x1000x1.png",
+                "id": 5821155,
+                "lyrics_owner_id": 9318193,
+                "lyrics_state": "complete",
+                "path": "/Genius-brasil-traducoes-drake-worst-behavior-traducao-em-portugues-lyrics",
+                "primary_artist_names": "Genius Brasil Traduções",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Genius-brasil-traducoes-drake-worst-behavior-traducao-em-portugues-sample",
+                "release_date_components": {
+                  "year": 2013,
+                  "month": 9,
+                  "day": 24
+                },
+                "release_date_for_display": "September 24, 2013",
+                "release_date_with_abbreviated_month_for_display": "Sep. 24, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/fa61eb6a4562b001280246ea4208d4a2.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/fa61eb6a4562b001280246ea4208d4a2.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 1,
+                  "hot": false
+                },
+                "title": "Drake - Worst Behavior (Tradução em Português)",
+                "title_with_featured": "Drake - Worst Behavior (Tradução em Português)",
+                "url": "https://genius.com/Genius-brasil-traducoes-drake-worst-behavior-traducao-em-portugues-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/210448",
+                  "header_image_url": "https://images.genius.com/887be16f52b0dec817adc23304662df0.900x176x1.jpg",
+                  "id": 210448,
+                  "image_url": "https://images.genius.com/3a0be3346223ddde1f4b5c1d315cb9db.750x750x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Genius Brasil Traduções",
+                  "url": "https://genius.com/artists/Genius-brasil-traducoes"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/210448",
+                    "header_image_url": "https://images.genius.com/887be16f52b0dec817adc23304662df0.900x176x1.jpg",
+                    "id": 210448,
+                    "image_url": "https://images.genius.com/3a0be3346223ddde1f4b5c1d315cb9db.750x750x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Genius Brasil Traduções",
+                    "url": "https://genius.com/artists/Genius-brasil-traducoes"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 40,
+                "api_path": "/songs/2304580",
+                "artist_names": "Polskie tłumaczenia Genius",
+                "full_title": "Drake - Worst Behavior (Polskie Tłumaczenie) by Polskie tłumaczenia Genius",
+                "header_image_thumbnail_url": "https://images.genius.com/8995cf9399adc382df89d7d4366bb3e5.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/8995cf9399adc382df89d7d4366bb3e5.990x990x1.jpg",
+                "id": 2304580,
+                "lyrics_owner_id": 1200573,
+                "lyrics_state": "complete",
+                "path": "/Polskie-tumaczenia-genius-drake-worst-behavior-polskie-tumaczenie-lyrics",
+                "primary_artist_names": "Polskie tłumaczenia Genius",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Polskie-tumaczenia-genius-drake-worst-behavior-polskie-tumaczenie-sample",
+                "release_date_components": {
+                  "year": 2013,
+                  "month": 9,
+                  "day": 24
+                },
+                "release_date_for_display": "September 24, 2013",
+                "release_date_with_abbreviated_month_for_display": "Sep. 24, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/8995cf9399adc382df89d7d4366bb3e5.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/8995cf9399adc382df89d7d4366bb3e5.990x990x1.jpg",
+                "stats": {
+                  "unreviewed_annotations": 0,
+                  "hot": false
+                },
+                "title": "Drake - Worst Behavior (Polskie Tłumaczenie)",
+                "title_with_featured": "Drake - Worst Behavior (Polskie Tłumaczenie)",
+                "url": "https://genius.com/Polskie-tumaczenia-genius-drake-worst-behavior-polskie-tumaczenie-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/161407",
+                  "header_image_url": "https://images.genius.com/d5556d9bbcf2acf5746255ac70326318.1000x300x1.png",
+                  "id": 161407,
+                  "image_url": "https://images.genius.com/0e56374611b2fa9e5647bce7b5ef7544.613x613x1.jpg",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Polskie tłumaczenia Genius",
+                  "url": "https://genius.com/artists/Polskie-tumaczenia-genius"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/161407",
+                    "header_image_url": "https://images.genius.com/d5556d9bbcf2acf5746255ac70326318.1000x300x1.png",
+                    "id": 161407,
+                    "image_url": "https://images.genius.com/0e56374611b2fa9e5647bce7b5ef7544.613x613x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Polskie tłumaczenia Genius",
+                    "url": "https://genius.com/artists/Polskie-tumaczenia-genius"
+                  }
+                ]
+              },
+              {
+                "annotation_count": 17,
+                "api_path": "/songs/287726",
+                "artist_names": "Genius traductions françaises",
+                "full_title": "Drake - Worst Behavior (Traduction Française) by Genius traductions françaises",
+                "header_image_thumbnail_url": "https://images.genius.com/c76f015df65ca249bb7e0bee91c39bc0.300x300x1.png",
+                "header_image_url": "https://images.genius.com/c76f015df65ca249bb7e0bee91c39bc0.1000x1000x1.png",
+                "id": 287726,
+                "lyrics_owner_id": 5243064,
+                "lyrics_state": "complete",
+                "path": "/Genius-traductions-francaises-drake-worst-behavior-traduction-francaise-lyrics",
+                "primary_artist_names": "Genius traductions françaises",
+                "pyongs_count": 4,
+                "relationships_index_url": "https://genius.com/Genius-traductions-francaises-drake-worst-behavior-traduction-francaise-sample",
+                "release_date_components": {
+                  "year": 2013,
+                  "month": 9,
+                  "day": 19
+                },
+                "release_date_for_display": "September 19, 2013",
+                "release_date_with_abbreviated_month_for_display": "Sep. 19, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/c76f015df65ca249bb7e0bee91c39bc0.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/c76f015df65ca249bb7e0bee91c39bc0.1000x1000x1.png",
+                "stats": {
+                  "unreviewed_annotations": 3,
+                  "hot": false,
+                  "pageviews": 9382
+                },
+                "title": "Drake - Worst Behavior (Traduction Française)",
+                "title_with_featured": "Drake - Worst Behavior (Traduction Française)",
+                "url": "https://genius.com/Genius-traductions-francaises-drake-worst-behavior-traduction-francaise-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                  "api_path": "/artists/140856",
+                  "header_image_url": "https://images.genius.com/4526c8e93fe0fb881d2602d3d4971d00.1000x382x1.png",
+                  "id": 140856,
+                  "image_url": "https://images.genius.com/19c032fed44f2e15bda26a7d1e4a6ae6.637x637x1.png",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Genius traductions françaises",
+                  "url": "https://genius.com/artists/Genius-traductions-francaises"
+                },
+                "primary_artists": [
+                  {
+                    "api_path": "/artists/140856",
+                    "header_image_url": "https://images.genius.com/4526c8e93fe0fb881d2602d3d4971d00.1000x382x1.png",
+                    "id": 140856,
+                    "image_url": "https://images.genius.com/19c032fed44f2e15bda26a7d1e4a6ae6.637x637x1.png",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Genius traductions françaises",
+                    "url": "https://genius.com/artists/Genius-traductions-francaises"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "translation_songs": [
+          {
+            "api_path": "/songs/6341855",
+            "id": 6341855,
+            "language": "tr",
+            "lyrics_state": "complete",
+            "path": "/Genius-turkce-ceviri-drake-worst-behavior-turkce-ceviri-lyrics",
+            "title": "Drake - Worst Behavior (Türkçe Çeviri)",
+            "url": "https://genius.com/Genius-turkce-ceviri-drake-worst-behavior-turkce-ceviri-lyrics"
+          },
+          {
+            "api_path": "/songs/5821155",
+            "id": 5821155,
+            "language": "pt",
+            "lyrics_state": "complete",
+            "path": "/Genius-brasil-traducoes-drake-worst-behavior-traducao-em-portugues-lyrics",
+            "title": "Drake - Worst Behavior (Tradução em Português)",
+            "url": "https://genius.com/Genius-brasil-traducoes-drake-worst-behavior-traducao-em-portugues-lyrics"
+          },
+          {
+            "api_path": "/songs/2304580",
+            "id": 2304580,
+            "language": "en",
+            "lyrics_state": "complete",
+            "path": "/Polskie-tumaczenia-genius-drake-worst-behavior-polskie-tumaczenie-lyrics",
+            "title": "Drake - Worst Behavior (Polskie Tłumaczenie)",
+            "url": "https://genius.com/Polskie-tumaczenia-genius-drake-worst-behavior-polskie-tumaczenie-lyrics"
+          },
+          {
+            "api_path": "/songs/287726",
+            "id": 287726,
+            "language": "fr",
+            "lyrics_state": "complete",
+            "path": "/Genius-traductions-francaises-drake-worst-behavior-traduction-francaise-lyrics",
+            "title": "Drake - Worst Behavior (Traduction Française)",
+            "url": "https://genius.com/Genius-traductions-francaises-drake-worst-behavior-traduction-francaise-lyrics"
+          }
+        ],
+        "verified_annotations_by": [],
+        "verified_contributors": [],
+        "verified_lyrics_by": [],
+        "writer_artists": [
+          {
+            "api_path": "/artists/130",
+            "header_image_url": "https://images.genius.com/eabc60cbdbb4ee10f803044aa826a183.545x178x1.png",
+            "id": 130,
+            "image_url": "https://images.genius.com/826d46d1d187602efccc87758b9e5d24.500x500x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Drake",
+            "url": "https://genius.com/artists/Drake"
+          },
+          {
+            "api_path": "/artists/27474",
+            "header_image_url": "https://images.genius.com/b40c29059d5e6320523e2f226803264e.722x516x1.jpg",
+            "id": 27474,
+            "image_url": "https://images.genius.com/b40c29059d5e6320523e2f226803264e.722x516x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Dahi",
+            "url": "https://genius.com/artists/Dahi",
+            "iq": 1495
+          },
+          {
+            "api_path": "/artists/17207",
+            "header_image_url": "https://images.genius.com/0df3b9c6f88ad3731fc9e5956263da48.1000x1000x1.jpg",
+            "id": 17207,
+            "image_url": "https://images.genius.com/0df3b9c6f88ad3731fc9e5956263da48.1000x1000x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Detail",
+            "url": "https://genius.com/artists/Detail"
+          },
+          {
+            "api_path": "/artists/22",
+            "header_image_url": "https://images.genius.com/1b66a66f14427bb384ff3c8ccecc05f7.1000x333x1.jpg",
+            "id": 22,
+            "image_url": "https://images.genius.com/a1028eceafa83e5118ed88c3b0d2b854.500x500x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "The Notorious B.I.G.",
+            "url": "https://genius.com/artists/The-notorious-big"
+          },
+          {
+            "api_path": "/artists/82",
+            "header_image_url": "https://filepicker-images.genius.com/YxmnpOsRKqedMBLugK8l_oie_15632191kzs2eJ0.jpg",
+            "id": 82,
+            "image_url": "https://filepicker-images.genius.com/jGCvpYJWTjKU9zcg01aa_photo.jpg",
+            "is_meme_verified": true,
+            "is_verified": true,
+            "name": "Diddy",
+            "url": "https://genius.com/artists/Diddy",
+            "iq": 683
+          },
+          {
+            "api_path": "/artists/249",
+            "header_image_url": "https://images.genius.com/1188e14a2d4aea326dba1017bec4068d.375x242x1.jpg",
+            "id": 249,
+            "image_url": "https://images.genius.com/b2417780460466574f6615cb26e97c6c.899x899x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Ma$e",
+            "url": "https://genius.com/artists/Ma-e",
+            "iq": 2238
+          },
+          {
+            "api_path": "/artists/8597",
+            "header_image_url": "https://s3.amazonaws.com/rapgenius/Jocelyn%20Stevie%20J%20DOA%20SFTA%20091912-10.jpg",
+            "id": 8597,
+            "image_url": "https://s3.amazonaws.com/rapgenius/Jocelyn%20Stevie%20J%20DOA%20SFTA%20091912-10.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Stevie J",
+            "url": "https://genius.com/artists/Stevie-j"
+          },
+          {
+            "api_path": "/artists/189401",
+            "header_image_url": "https://images.genius.com/c7230afabe82179f2b3e284118fb6ebd.419x419x1.jpg",
+            "id": 189401,
+            "image_url": "https://images.genius.com/c7230afabe82179f2b3e284118fb6ebd.419x419x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Bernard Edwards",
+            "url": "https://genius.com/artists/Bernard-edwards"
+          },
+          {
+            "api_path": "/artists/34636",
+            "header_image_url": "https://images.genius.com/1ee0d58bfc81352329eeb76fb3bfff09.399x399x1.jpg",
+            "id": 34636,
+            "image_url": "https://images.genius.com/1ee0d58bfc81352329eeb76fb3bfff09.399x399x1.jpg",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Nile Rodgers",
+            "url": "https://genius.com/artists/Nile-rodgers"
+          },
+          {
+            "api_path": "/artists/451592",
+            "header_image_url": "https://images.genius.com/1cefc21e0d167c03efc56adca4843cdf.146x281x1.png",
+            "id": 451592,
+            "image_url": "https://images.genius.com/1cefc21e0d167c03efc56adca4843cdf.146x281x1.png",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Anthony Palman",
+            "url": "https://genius.com/artists/Anthony-palman"
+          }
+        ]
+      }
+    }
+  }
