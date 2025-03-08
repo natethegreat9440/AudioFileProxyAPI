@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "GeniusProxyController",
+    "Method": "HandleSearchForSampleInfo",
+    "RelativePath": "api/genius/samples",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "geniusId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GeniusProxyController",
     "Method": "SearchSong",
     "RelativePath": "api/genius/search",
     "HttpMethod": "GET",

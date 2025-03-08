@@ -53,6 +53,27 @@
           }
         }
       }
+    },
+    "/api/genius/samples": {
+      "get": {
+        "tags": [
+          "GeniusProxy"
+        ],
+        "parameters": [
+          {
+            "name": "geniusId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": { }

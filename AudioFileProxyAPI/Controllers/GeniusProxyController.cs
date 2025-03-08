@@ -24,6 +24,7 @@ public class GeniusProxyController : ControllerBase
 
         //TODO: Delete the hard coded API key before committing and uncomment the line above!!!
         //Copy and paste API key below for pre-deployment on Render testing;
+        //_apiKey = "";
 
         if (string.IsNullOrEmpty(_apiKey))
             throw new Exception("Genius API key is missing. Set it in appsettings.json.");
@@ -34,12 +35,28 @@ public class GeniusProxyController : ControllerBase
     [HttpGet("search")]
     public async Task<IActionResult> SearchSong([FromQuery] string artist, [FromQuery] string trackName)
     {
+        string songUrl = string.Empty;
+        string geniusSongId = string.Empty;
+
         if (string.IsNullOrEmpty(artist) || string.IsNullOrEmpty(trackName))
             return BadRequest("Artist and track name are required.");
 
         try
         {
-            return await HandleGeniusUrlSearch(artist, trackName);
+
+            var results = await HandleGeniusUrlAndSongID(artist, trackName);
+
+            if (!results.Any())
+            {
+                return NotFound("Genius URL and song ID not found.");
+            }
+            else
+            {
+                songUrl = results[0].ToString();
+                geniusSongId = results[1].ToString();
+            }
+            return Ok(new { songUrl = songUrl, geniusSongId = geniusSongId });
+
         }
         catch (Exception ex)
         {
@@ -172,8 +189,28 @@ public class GeniusProxyController : ControllerBase
                 album = album,
                 albumTrackNumber = string.IsNullOrEmpty(albumTrackNumber) ? fallbackAlbumNumber.ToString() : albumTrackNumber,
                 songUrl = songUrl,
+                geniusSongId = geniusSongId,
                 apiSource = "Genius"
             });
+    }
+
+    [HttpGet("samples")]
+    public async Task<IActionResult> HandleSearchForSampleInfo([FromQuery] string geniusId)
+    {
+        string songDetailsUrl = $"https://api.genius.com/songs/{geniusId}";
+
+        var songResponse = await _httpClient.GetStringAsync(songDetailsUrl);
+        JObject songJson = JObject.Parse(songResponse);
+
+        string trackSamples = HandleTrackSampleInfoExtraction(songJson, "samples");
+        string sampledBys = HandleTrackSampleInfoExtraction(songJson, "sampled_in");
+
+        return Ok(new
+        {
+            trackSamples = string.IsNullOrEmpty(trackSamples) ? string.Empty : trackSamples,
+            sampledBys = string.IsNullOrEmpty(sampledBys) ? string.Empty : sampledBys,
+            apiSource = "Genius"
+        });
     }
 
     private async Task<IActionResult> HandleGeniusUrlSearch(string artist, string trackName)
@@ -342,6 +379,40 @@ public class GeniusProxyController : ControllerBase
         return albumNumber;
     }
 
+    private string HandleTrackSampleInfoExtraction(JObject songJson, string relationshipType)
+    {
+        var fullTitles = new List<string>();
+
+        try
+        {
+            // Navigate to the song_relationships array
+
+            JArray relationships = (JArray)songJson["response"]["song"]["song_relationships"];
+
+            // Loop through the relationships
+            foreach (JObject rel in relationships)
+            {
+                // Check if the relationship_type is "samples" or "sampled_in"
+                if ((string)rel["relationship_type"] == relationshipType)
+                {
+                    // Iterate over each song in this relationship
+                    JArray songs = (JArray)rel["songs"];
+                    foreach (JObject song in songs)
+                    {
+                        // Add the full_title of the song to the list
+                        fullTitles.Add((string)song["full_title"]);
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            return string.Empty;
+        }
+
+        return string.Join(", ", fullTitles);
+    }
+
     private async Task<int> CheckForHitsWithTokens(string aToken, string anotherToken)
     {
         //Arbitrarily sets tokens passed in to artist and trackName
@@ -365,11 +436,6 @@ public class GeniusProxyController : ControllerBase
                 return 0;
             else
             {
-                //Try this if return hits.Count(); doesn't work
-                // Read file content into a string (assuming the file content is in jsonContent)
-                //JArray hits = JArray.Parse(jsonContent);
-                //int hitCount = hits.Count();
-
                 return hits.Count();
             }
         }
