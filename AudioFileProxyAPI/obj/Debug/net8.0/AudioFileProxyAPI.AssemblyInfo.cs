@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AudioFileProxyAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36247a67356beb2c3707cfab09269da25636499f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b05492e61d032923efc8c9ec9c35d9100b684d91")]
 [assembly: System.Reflection.AssemblyProductAttribute("AudioFileProxyAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AudioFileProxyAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

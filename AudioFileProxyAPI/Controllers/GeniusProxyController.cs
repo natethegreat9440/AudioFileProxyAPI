@@ -197,13 +197,27 @@ public class GeniusProxyController : ControllerBase
     [HttpGet("samples")]
     public async Task<IActionResult> HandleSearchForSampleInfo([FromQuery] string geniusId)
     {
-        string songDetailsUrl = $"https://api.genius.com/songs/{geniusId}";
+        string trackSamples = string.Empty;
+        string sampledBys = string.Empty;
 
-        var songResponse = await _httpClient.GetStringAsync(songDetailsUrl);
-        JObject songJson = JObject.Parse(songResponse);
+        if (string.IsNullOrEmpty(geniusId))
+            return BadRequest("GeniusID is required.");
 
-        string trackSamples = HandleTrackSampleInfoExtraction(songJson, "samples");
-        string sampledBys = HandleTrackSampleInfoExtraction(songJson, "sampled_in");
+        try
+        {
+            string songDetailsUrl = $"https://api.genius.com/songs/{geniusId}";
+
+            var songResponse = await _httpClient.GetStringAsync(songDetailsUrl);
+            JObject songJson = JObject.Parse(songResponse);
+
+            trackSamples = HandleTrackSampleInfoExtraction(songJson, "samples");
+            sampledBys = HandleTrackSampleInfoExtraction(songJson, "sampled_in");
+        }
+
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Server error: {ex.Message}");
+        }
 
         return Ok(new
         {
