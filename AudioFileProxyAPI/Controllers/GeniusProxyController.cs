@@ -423,8 +423,9 @@ public class GeniusProxyController : ControllerBase
         {
             return string.Empty;
         }
-
-        return string.Join(", ", fullTitles);
+        
+        //Remove non-breaking spaces and join all full titles into a flattened comma-separated string
+        return CleanExtraSpaces(string.Join(", ", fullTitles));
     }
 
     private async Task<int> CheckForHitsWithTokens(string aToken, string anotherToken)
